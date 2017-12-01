@@ -65,6 +65,7 @@ h6 {
 
 section {
   max-width: 300px;
+  min-width: 200px;
   margin: 0 auto 1em;
   border: 1px solid #29434e;
   border-radius: 3px;
