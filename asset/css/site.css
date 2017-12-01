@@ -1,0 +1,119 @@
+/*
+  
+  Mobile First
+
+  Colors: https://material.io/color/#!/?view.left=0&view.right=0&primary.color=546E7A&secondary.color=A5D6A7
+
+    Primary   - #546e7a
+    P - Light - #819ca9
+    P - Dark  - #29434e
+    Secondary - #a5d6a7
+    S - Light - #d7ffd9
+    S - Dark  - #75a478
+    Text on P - #ffffff
+    Text on S - #000000
+
+*/
+
+html {
+  min-height: 100%;  
+}
+
+body {
+  height: 100%;
+  background-image: 
+    radial-gradient(ellipse at 0% 100%,
+      #546e7a 0%, #29434e 100%);
+
+  font-family: Helvetica, sans-serif;
+  color: rgba(235, 255, 237, 0.5);
+  line-height: 1.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: rgba(235, 255, 237, 0.5);
+}
+
+path {
+  fill: rgba(235, 255, 237, 0.5);
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 { 
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Palatino, serif;
+}
+
+section {
+  max-width: 300px;
+  margin: 0 auto 1em;
+  border: 1px solid #29434e;
+  border-radius: 3px;
+  padding: 1em;
+
+  background-image: 
+    radial-gradient(ellipse at 100% 0%,
+      #546e7a 0%, #29434e 100%);
+
+  -webkit-box-shadow: 6px 5px 10px 6px rgba(41,67,78,1);
+  -moz-box-shadow: 6px 5px 10px 6px rgba(41,67,78,1);
+  box-shadow: 6px 5px 10px 6px rgba(41,67,78,1);
+}
+
+h1 .cap,
+h2 .cap,
+h3 .cap,
+h4 .cap,
+h5 .cap,
+h6 .cap {
+  text-transform: lowercase;
+  display: inline-block;
+}
+
+h1 .cap::first-letter,
+h2 .cap::first-letter,
+h3 .cap::first-letter,
+h4 .cap::first-letter,
+h5 .cap::first-letter,
+h6 .cap::first-letter {
+  font-size: 2em;
+}
+
+.logo {
+  display: inline-block;
+  background-size: 100% 100%;
+  height: 32px;
+  width: 32px;
+}
+
+header {
+  text-align: center;
+}
+
+.portfolioItem {
+  border-bottom: 1px solid rgba(235, 255, 237, 0.5);
+  margin-bottom: 15px;
+}
+
+.portfolioItem:last-child {
+  border-bottom: none;
+} 
