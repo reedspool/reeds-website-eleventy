@@ -116,4 +116,12 @@ header {
 
 .portfolioItem:last-child {
   border-bottom: none;
-} 
+}
+
+.portfolioItem img {
+  border-radius: 3px;
+
+  -webkit-box-shadow: 6px 5px 10px 6px rgba(41,67,78,1);
+  -moz-box-shadow: 6px 5px 10px 6px rgba(41,67,78,1);
+  box-shadow: 6px 5px 10px 6px rgba(41,67,78,1);
+}
