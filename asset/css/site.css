@@ -38,6 +38,10 @@ a {
   color: rgba(235, 255, 237, 0.5);
 }
 
+body > svg {
+  display: none;
+}
+
 path {
   fill: rgba(235, 255, 237, 0.5);
 }
@@ -64,8 +68,7 @@ h6 {
 }
 
 section {
-  max-width: 300px;
-  min-width: 200px;
+  width: 80%;
   margin: 0 auto 1em;
   border: 1px solid #29434e;
   border-radius: 3px;
@@ -125,4 +128,10 @@ header {
   -webkit-box-shadow: 6px 5px 10px 6px rgba(41,67,78,1);
   -moz-box-shadow: 6px 5px 10px 6px rgba(41,67,78,1);
   box-shadow: 6px 5px 10px 6px rgba(41,67,78,1);
+}
+
+@media (min-width: 768px) {
+  section {
+    width: 300px;  
+  }
 }
