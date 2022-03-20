@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-04-04 Sun 00:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project: Decode Shani's Birthday Letter to Me</title>
+<meta name="author" content="Reed Spool" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<style>body{background: #29292d;color: #b7c3bc;}</style>
+<style>#content{max-width: 700px;margin: 0 auto;}</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Project: Decode Shani&rsquo;s Birthday Letter to Me</h1>
+<p>
+My dream puzzle maker sent me a secret code for my birthday. She said I&rsquo;d have to use my passion to figure it out, and after taking one look I realized she meant computer programming and cryptography and not Avatar: The Last Airbender. Here is the original message in full:
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>Original title: Birthday Letter.txt</label><pre class="src src-text" id="org84f7078">l'b uwffqb uosi n bsw diz. ncx, fftqv zayb pn naynnhh, djj ykt ewxn wwwqy nt woshjh wd pw cs p wjzfd lwov sjdg dfi krg wzfn, l qrfxcihg pqxyqi zxups. l vrhj ykxg dnnyot jakn utalfim bdi lmuy x ogay zwowwayw iwpw qj vsw yi vesqv ntjthkww, ykph a fnnt owflslcu lmy oxhwdj ihioldx ykph efej ncx bbt ncx flj, diu qysjivb hisytfvsyctqh dttoy pbblmcsj ow ffq, ivh quzjwhhj nmdi fgryx hc wfmnon dxyyw rcpejhylcu knfqb gwmkz. l qrmqx jd rf, ljdazb, goy xzo xnts phxtlj ivh hbjhhwqwxm etqrejm wdc ezwm. x mmxn odjh kyjoxbj hftvt wg stx syws kuda s xnvioquj. mdkwqy mfls wznm, l vrhj drj hfoid icgsd nq oqq qfb mrmw mhpfw iyxlgsv. muusn 31vl vnuivgsd!
+</pre>
+</div>
+
+<p>
+My first thought was the common method for mildly obscuring plain text files, ROT13, where each character is shifted alphabetically by 13 characters. The cool thing about ROT13 is that encoding and decoding are the exact same function, since the English alphabet is 26 characters.
+</p>
+
+<p>
+My favorite person really likes Python, but I&rsquo;ve never really tried it. Decoding this document would be a focused challenge dealing only with text, so I decided to try it in Python. That said, I was more interested in decoding the text than learning Python from scratch so I decided to use code found on the Internet where I could. Here is a ROT13 function in Python I found from <a href="https://www.dotnetperls.com/rot13-python">https://www.dotnetperls.com/rot13-python</a>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org326d3ee"><span style="color: #81A1C1;">def</span> <span style="color: #8FBCBB;">rot13</span>(s):
+    <span style="color: #D8DEE9;">result</span> = <span style="color: #A3BE8C;">""</span>
+
+    <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Loop over characters.</span>
+    <span style="color: #81A1C1;">for</span> v <span style="color: #81A1C1;">in</span> s:
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Convert to number with ord.</span>
+        <span style="color: #D8DEE9;">c</span> = <span style="color: #81A1C1;">ord</span>(v)
+
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Shift number back or forward.</span>
+        <span style="color: #81A1C1;">if</span> c &gt;= <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'a'</span>) <span style="color: #81A1C1;">and</span> c &lt;= <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'z'</span>):
+            <span style="color: #81A1C1;">if</span> c &gt; <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'m'</span>):
+                <span style="color: #D8DEE9;">c</span> -= <span style="color: #B48EAD; font-weight: bold;">13</span>
+            <span style="color: #81A1C1;">else</span>:
+                <span style="color: #D8DEE9;">c</span> += <span style="color: #B48EAD; font-weight: bold;">13</span>
+        <span style="color: #81A1C1;">elif</span> c &gt;= <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'A'</span>) <span style="color: #81A1C1;">and</span> c &lt;= <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'Z'</span>):
+            <span style="color: #81A1C1;">if</span> c &gt; <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'M'</span>):
+                <span style="color: #D8DEE9;">c</span> -= <span style="color: #B48EAD; font-weight: bold;">13</span>
+            <span style="color: #81A1C1;">else</span>:
+                <span style="color: #D8DEE9;">c</span> += <span style="color: #B48EAD; font-weight: bold;">13</span>
+
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Append to result.</span>
+        <span style="color: #D8DEE9;">result</span> += <span style="color: #81A1C1;">chr</span>(c)
+
+    <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Return transformation.</span>
+    <span style="color: #81A1C1;">return</span> result
+</pre>
+</div>
+
+<p>
+Here is what the original text looks like after applying a ROT13 function in Python:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #6f7787;"># </span><span style="color: #6f7787;">Apply the transformation and print the results.</span>
+<span style="color: #81A1C1;">input</span>=<span style="color: #A3BE8C;">""</span>
+
+<span style="color: #81A1C1;">print</span>(rot13(<span style="color: #81A1C1;">input</span>))
+</pre>
+</div>
+
+
+<div class="org-src-container">
+<pre class="src src-text">y'o hjssdo hbfv a ofj qvm. apk, ssgdi mnlo ca anlaauu, qww lxg rjka jjjdl ag jbfuwu jq cj pf c jwmsq yjbi fwqt qsv xet jmsa, y deskpvut cdkldv mkhcf. y ieuw lxkt qaalbg wnxa hgnysvz oqv yzhl k btnl mjbjjnlj vjcj dw ifj lv irfdi agwguxjj, lxcu n saag bjsyfyph yzl bkujqw vuvbyqk lxcu rsrw apk oog apk syw, qvh dlfwvio uvflgsiflpgdu qggbl cooyzpfw bj ssd, viu dhmwjuuw azqv stelk up jszaba qkllj epcrwulyph xasdo tjzxm. y dezdk wq es, ywqnmo, tbl kmb kagf cukgyw viu uowuujdjkz rgderwz jqp rmjz. k zzka bqwu xlwbkow usgig jt fgk fljf xhqn f kaivbdhw. zqxjdl zsyf jmaz, y ieuw qew usbvq vptfq ad bdd dso zezj zucsj vlkytfi. zhhfa 31iy iahvitfq!
+</pre>
+</div>
+
+<p>
+Since the result was still gibberish, I knew it was not the final answer. I knew the result would be plain English, because I trusted my dreamy puzzle maker. There was also a chance it would be in Spanish since that is her native language, but I also trusted she that she did not want to punish me. Perhaps I trusted too much.
+</p>
+
+<p>
+When I looked at the ROT13 output, I noticed at this point a big clue which I could have noticed from the original: the number 31. Today is my 31st birthday, so this confirmed my original assumption that this was a cipher. Cipher&rsquo;s are a subset of encryption where each character in the source text is replaced by another character. A property all ciphers share is that they don&rsquo;t change the shape of the message, only the characters. It&rsquo;s easy to see this property when comparing the original to the ROT13 result: the punctuation, spacing, and the number are exactly the same.
+</p>
+
+<p>
+ROT13 is an example of one such cipher. Specifically, ROT13 is a symmetric substitution cipher. I don&rsquo;t know any other symmetric substitution ciphers off the top of my head, so I decided to broaden my thoughts to any substitution cipher, symmetric or not. All substitution ciphers share a property from which they get their name: Each character maps to exactly one other character, so if the letter &ldquo;a&rdquo; in the source is replaced by a &ldquo;b&rdquo; in one place, every instance of &ldquo;a&rdquo; will be replaced by &ldquo;b&rdquo;.
+</p>
+
+<p>
+I&rsquo;ll get back to ciphers in a moment, but first I have to finish explaining why the &ldquo;31&rdquo; is such a big clue. As I put it originally, it&rsquo;s my &ldquo;31st birthday.&rdquo; My father, earlier in the day, sent me the text message, &ldquo;Happy 31st birthday!&rdquo;. Well not that exactly, but it was something close to that. I noticed that the shape of the sentence where &ldquo;31&rdquo; appears matches &ldquo;happy 31st birthday!&rdquo; exactly. Cryptographers call this type of &ldquo;inside knowledge&rdquo; a &ldquo;crib&rdquo;, and it&rsquo;s how the Allies cracked the Enigma in WWII! Surely this would make solving this puzzle easy, right?
+</p>
+
+<p>
+So using my new crib I quickly checked if this cipher was a substitution cipher. If it was, that would narrow the scope of solutions. My crib was a lucky one for this test in that it had multiple instances of the same character. So if this was a substitution cipher, those instances would all be replaced by the same, new character. Here&rsquo;s the relevant piece of the source message:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">muusn 31vl vnuivgsd!
+</pre>
+</div>
+
+<p>
+There are two &ldquo;p&rdquo;&rsquo;s in &ldquo;happy&rdquo;, and they&rsquo;re both replaced by &ldquo;u&rdquo;! We&rsquo;re on to something! But wait, the third character in &ldquo;birthday&rdquo; is <i>not</i> &ldquo;p&rdquo;. This is not a simple substitution cipher.
+</p>
+
+<p>
+At this point I started to panic, mildly, because this is about where my deep knowledge of cryptography ends. The list of known ciphers is long and complicated, and within a single cipher there is a lot of room for variation.
+</p>
+
+<p>
+I decided to stare at the code and observe more. I saw some interesting things.
+</p>
+
+<p>
+First, the two &ldquo;p&rdquo;&rsquo;s in happy are in the wrong place! But backwards, they would be in the right place. The whole text isn&rsquo;t reversed, because then the punctuation would appear at the beginning of sentences. Perhaps each word is reversed in place? Then why is my original clue not &ldquo;ts13&rdquo;, &ldquo;31st&rdquo; backwards? Maybe the letters in each word are jumbled up.
+</p>
+
+<p>
+Next I saw &ldquo;wwwqy&rdquo; which confused me a lot, since I don&rsquo;t know of any English words with three of the same character in a row. Another vote for jumbled letters. Maybe it is Spanish? Then my crib would be &ldquo;¡Feliz 31º cumpleaños!&rdquo;, which doesn&rsquo;t match the shape of the encoded text, and I would be in a worse spot than I thought. Another idea is that the cipher shifts after every character, but then the double &ldquo;p&rdquo; in &ldquo;happy&rdquo; would be a complete red herring. That would be okay; I do love fish.
+</p>
+
+<p>
+In this writing, which is so personal, I&rsquo;ve started a lot of sentences with &ldquo;I.&rdquo; This letter from my favorite person/vampire/robot is also personal in nature, and I notice many sentences start with a single letter word, &ldquo;l&rdquo;. The very first sentence is &ldquo;l&rsquo;b&rdquo;, which could map to &ldquo;I&rsquo;m.&rdquo; But that confuses me more, because that would contradict my previous observations. Perhaps it is a shift cipher which restarts at the beginning of each sentence. There is one instance of &ldquo;l&rdquo; alone as a word, but it occurs right after a comma; perhaps it restarts at every punctuation mark.
+</p>
+
+<p>
+After staring at the encoded message for a long time, I decided to take a step back. I started with a break away from the computer, thinking that when I came back I would research some different kinds of ciphers. The first one I thought to research was a Caesar Cipher, which is a famous cipher; unfortunately, I don&rsquo;t remember how it works.
+</p>
+
+<p>
+The decision to research on the Internet or keep trying on my own merits gave me pause. I really wanted to do all I possibly could before reaching for outside info. So I thought about what I would do next if not research, here are the options I brainstormed:
+</p>
+
+<ul class="org-ul">
+<li>Manually try to make a substitution table with my observations alone.
+<ul class="org-ul">
+<li>This is less fun than finding a solution via programming</li>
+<li>It&rsquo;s pretty easy to do, though maybe time consuming</li>
+<li>It could turn out nothing</li>
+</ul></li>
+<li>Try to make a Caesar cipher
+<ul class="org-ul">
+<li>I only kind of remember how Caesar ciphers work</li>
+<li>Same problems as a simple substitution cipher</li>
+</ul></li>
+<li>Write a program to do substitutions and check the decoded words against a dictionary.
+<ul class="org-ul">
+<li>If the words are jumbled, they won&rsquo;t match the dictionary exactly. We can check if the same characters in any order appear as a word in the dictionary.</li>
+<li>Might be really, really slow</li>
+<li>I don&rsquo;t know Python at all</li>
+</ul></li>
+</ul>
+
+<p>
+After a spoiler-free phone call with the beautiful puzzle master, I decided finally to look up what a Caesar cipher is and try my hand at manual decoding.
+</p>
+
+<p>
+Well I feel silly after looking that up. It turns out Caesar cipher and shift cipher refer to the same thing. What I was thinking was something different, where the cipher changes as you move through the text, shifting as you go. A caesar cipher is what I was calling a substitution cipher, but where the alphabet is in the same order. So ROT13 is one of 25 possible Caesar ciphers. And I was so confident I knew what I was talking about!
+</p>
+
+<p>
+From the Caesar cipher wikipedia page, I did find a link to <a href="https://en.m.wikipedia.org/wiki/Vigen%C3%A8re_cipher">https://en.m.wikipedia.org/wiki/Vigen%C3%A8re_cipher</a> which seems like what I was thinking of. Decoding this seems to require a key. Days before I received the puzzle, the infinitely clever puzzle master said this phrase, &ldquo;Just remember that the key is your passion.&rdquo; Now it seems pretty obvious that this refers to a cryptographic key. I feel denser than ever, in a fun way.
+</p>
+
+<p>
+Well, I think once you have the key it might be pretty straight forward to decode this particular cipher, so I might as well try!
+</p>
+
+<p>
+And because I have a direct formula, I am back to thinking it would be fun to write it in Python.
+</p>
+
+<p>
+With a Vigenère cipher, much like a Caesar cipher, the letter to replace is found by shifting the alphabet by a certain amount. But that amount changes based on the index of the letter in the source message. I won&rsquo;t try to explain it all because the Wikipedia article does a better job, and my lovely puzzle master knows anyways.
+</p>
+
+<p>
+I&rsquo;m going to write both encoding and decoding code to test it.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org83c0b8e"><span style="color: #81A1C1;">def</span> <span style="color: #8FBCBB;">vigenere_offset</span>(source_index, key):
+    <span style="color: #81A1C1;">return</span> <span style="color: #81A1C1;">ord</span>(key[source_index % <span style="color: #81A1C1;">len</span>(key)]) - <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'a'</span>)
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org7a97432">
+<span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"'%d' should be '11'"</span> %vigenere_offset(<span style="color: #B48EAD; font-weight: bold;">50</span>, <span style="color: #A3BE8C;">"lemon"</span>))
+<span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"'%s' should be 'l'"</span> %<span style="color: #81A1C1;">chr</span>(vigenere_offset(<span style="color: #B48EAD; font-weight: bold;">50</span>, <span style="color: #A3BE8C;">"lemon"</span>) + <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'a'</span>)))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">'11' should be '11'
+'l' should be 'l'
+</pre>
+</div>
+
+<p>
+I&rsquo;ll explain the optional salt parameter later:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org8fad633">
+<span style="color: #81A1C1;">def</span> <span style="color: #8FBCBB;">vigenere_encode_char</span>(source_index, source_char, key, salt = <span style="color: #B48EAD; font-weight: bold;">0</span>):
+    <span style="color: #D8DEE9;">offset</span> = vigenere_offset(source_index, key)
+    <span style="color: #D8DEE9;">ord_source</span> = <span style="color: #81A1C1;">ord</span>(source_char) - <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'a'</span>)
+    <span style="color: #D8DEE9;">shifted</span> = (ord_source + offset + salt) % <span style="color: #B48EAD; font-weight: bold;">26</span>
+    <span style="color: #81A1C1;">return</span> <span style="color: #81A1C1;">chr</span>(shifted + <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'a'</span>))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org5ae1d6b">
+<span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"'%s' should be 'l'"</span> %vigenere_encode_char(<span style="color: #B48EAD; font-weight: bold;">50</span>, <span style="color: #A3BE8C;">"a"</span>, <span style="color: #A3BE8C;">"lemon"</span>))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">'l' should be 'l'
+</pre>
+</div>
+
+<p>
+Decoding should be the opposite of encoding:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org61778ab">
+<span style="color: #81A1C1;">def</span> <span style="color: #8FBCBB;">vigenere_decode_char</span>(encoded_index, encoded_char, key, salt=<span style="color: #B48EAD; font-weight: bold;">0</span>):
+    <span style="color: #D8DEE9;">offset</span> = vigenere_offset(encoded_index, key)
+    <span style="color: #D8DEE9;">ord_encoded</span> = <span style="color: #81A1C1;">ord</span>(encoded_char) - <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'a'</span>)
+    <span style="color: #D8DEE9;">shifted</span> = (ord_encoded - offset - salt) % <span style="color: #B48EAD; font-weight: bold;">26</span>
+    <span style="color: #81A1C1;">return</span> <span style="color: #81A1C1;">chr</span>(shifted + <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'a'</span>))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org2621773">
+<span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"'%s' should be 'a'"</span> %vigenere_decode_char(<span style="color: #B48EAD; font-weight: bold;">50</span>, <span style="color: #A3BE8C;">"l"</span>, <span style="color: #A3BE8C;">"lemon"</span>))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">'a' should be 'a'
+</pre>
+</div>
+
+<p>
+Now we need a function to run through the whole source message and encode it. I&rsquo;ll explain the reason for the optional index and salt parameters later:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org0b920e1">
+<span style="color: #81A1C1;">def</span> <span style="color: #8FBCBB;">vigenere_encode_message</span>(source, key, encoding_index = <span style="color: #B48EAD; font-weight: bold;">0</span>, salt = <span style="color: #B48EAD; font-weight: bold;">0</span>):
+    <span style="color: #D8DEE9;">encoded</span> = <span style="color: #A3BE8C;">""</span>
+    <span style="color: #81A1C1;">for</span> char <span style="color: #81A1C1;">in</span> source:
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">If the character is alphabetic</span>
+        <span style="color: #81A1C1;">if</span> char &gt;= <span style="color: #A3BE8C;">'a'</span> <span style="color: #81A1C1;">and</span> char &lt;= <span style="color: #A3BE8C;">'z'</span>:
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Encode before appending</span>
+            <span style="color: #D8DEE9;">encoded</span> += vigenere_encode_char(encoding_index, char, key, salt)
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Then shift the vigenere cipher</span>
+            <span style="color: #D8DEE9;">encoding_index</span> += <span style="color: #B48EAD; font-weight: bold;">1</span>
+        <span style="color: #81A1C1;">else</span>:
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Just append</span>
+            <span style="color: #D8DEE9;">encoded</span> += char
+    <span style="color: #81A1C1;">return</span> encoded
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org1af8357">
+<span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"'%s' should be 'lxfopvefrnhr'"</span>
+      %vigenere_encode_message(<span style="color: #A3BE8C;">"attackatdawn"</span>, <span style="color: #A3BE8C;">"lemon"</span>))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">'lxfopvefrnhr' should be 'lxfopvefrnhr'
+</pre>
+</div>
+
+<p>
+So my Vigenere cipher code works. I wonder if I can encode my crib properly now:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org2aefa78">
+<span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"'%s' should be 'muusn 31vl vnuivgsd'"</span>
+      %vigenere_encode_message(<span style="color: #A3BE8C;">"happy 31st birthday"</span>, <span style="color: #A3BE8C;">"passion"</span>))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">'wahhg 31gg qijlprnn' should be 'muusn 31vl vnuivgsd'
+</pre>
+</div>
+
+<p>
+Nope. That&rsquo;s disappointing. I really thought I was on to something. Well, I don&rsquo;t know the starting shift when this should be encoded, so let me try all possible shifts, which would be the length of the key.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org5534858">
+<span style="color: #D8DEE9;">key</span> = <span style="color: #A3BE8C;">"passion"</span>
+<span style="color: #81A1C1;">for</span> x <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #81A1C1;">len</span>(key)):
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"'%s' is hopefully 'muusn 31vl vnuivgsd'"</span>
+          %vigenere_encode_message(<span style="color: #A3BE8C;">"happy 31st birthday"</span>, key, x))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">'wahhg 31gg qijlprnn' is hopefully 'muusn 31vl vnuivgsd'
+'hshxm 31fi bajbvqpy' is hopefully 'muusn 31vl vnuivgsd'
+'zsxdl 31ht tazhusaq' is hopefully 'muusn 31vl vnuivgsd'
+'zidcn 31sl tqfgwdsq' is hopefully 'muusn 31vl vnuivgsd'
+'pocey 31kl jweihvsg' is hopefully 'muusn 31vl vnuivgsd'
+'vnepq 31kb pvgtzvim' is hopefully 'muusn 31vl vnuivgsd'
+'upphq 31ah oxrlzlol' is hopefully 'muusn 31vl vnuivgsd'
+</pre>
+</div>
+
+<p>
+Nope. But I did notice something interesting: that last entry has double &ldquo;p&rdquo;&rsquo;s where my encoded crib has double &ldquo;u&rdquo;&rsquo;s. I wondered if there was an additional offset. I think that would be called a &ldquo;salt&rdquo;. I decided to do some comparison calculations. If there was a salt, then there should be a similar ordinal distance relationship between many of the characters.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="orgb017c49"><span style="color: #81A1C1;">def</span> <span style="color: #8FBCBB;">diff</span>(a, b):
+    <span style="color: #81A1C1;">return</span> (<span style="color: #81A1C1;">ord</span>(b) - <span style="color: #81A1C1;">ord</span>(a)) % <span style="color: #B48EAD; font-weight: bold;">26</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org1e89cc2">
+<span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"%i should be the same as %i"</span> %(diff(<span style="color: #A3BE8C;">"u"</span>, <span style="color: #A3BE8C;">"p"</span>),diff(<span style="color: #A3BE8C;">"m"</span>, <span style="color: #A3BE8C;">"u"</span>)))
+<span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"%i should be the same as %i"</span> %(diff(<span style="color: #A3BE8C;">"u"</span>, <span style="color: #A3BE8C;">"m"</span>),diff(<span style="color: #A3BE8C;">"p"</span>, <span style="color: #A3BE8C;">"u"</span>)))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">21 should be the same as 8
+18 should be the same as 5
+</pre>
+</div>
+
+<p>
+Dead end again. The original message said &ldquo;the key is your passion,&rdquo; not &ldquo;the key is passion.&rdquo; So maybe I was wrong about the key. Let me run the same test with a different key.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="orge2bc140">
+<span style="color: #D8DEE9;">key</span> = <span style="color: #A3BE8C;">"yourpassion"</span>
+<span style="color: #81A1C1;">for</span> x <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #81A1C1;">len</span>(key)):
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"'%s' is hopefully 'muusn 31vl vnuivgsd'"</span>
+          %vigenere_encode_message(<span style="color: #A3BE8C;">"happy 31st birthday"</span>, key, x))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">'fojgn 31sl tqfgfrup' is hopefully 'muusn 31vl vnuivgsd'
+'vugey 31kl jwervxrn' is hopefully 'muusn 31vl vnuivgsd'
+'brepq 31kb pvphbupy' is hopefully 'muusn 31vl vnuivgsd'
+'ypphq 31ah ogfnysaq' is hopefully 'muusn 31vl vnuivgsd'
+'wahhg 31gg zwlkwdsq' is hopefully 'muusn 31vl vnuivgsd'
+'hshxm 31fr pciihvsg' is hopefully 'muusn 31vl vnuivgsd'
+'zsxdl 31qh vzgtzvim' is hopefully 'muusn 31vl vnuivgsd'
+'zidcw 31gn sxrlzlol' is hopefully 'muusn 31vl vnuivgsd'
+'pocnm 31mk qijlprnw' is hopefully 'muusn 31vl vnuivgsd'
+'vnnds 31ji bajbvqym' is hopefully 'muusn 31vl vnuivgsd'
+'uydjp 31ht tazhubos' is hopefully 'muusn 31vl vnuivgsd'
+</pre>
+</div>
+
+<p>
+I noticed this time there were two entries with double characters in the same place, I compared them the same way:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="orgeda22b0">
+<span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"%i is hopefully the same as %i"</span> %(diff(<span style="color: #A3BE8C;">"y"</span>, <span style="color: #A3BE8C;">"p"</span>),diff(<span style="color: #A3BE8C;">"m"</span>, <span style="color: #A3BE8C;">"u"</span>)))
+<span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"%i is hopefully the same as %i"</span> %(diff(<span style="color: #A3BE8C;">"m"</span>, <span style="color: #A3BE8C;">"y"</span>),diff(<span style="color: #A3BE8C;">"u"</span>, <span style="color: #A3BE8C;">"p"</span>)))
+<span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"%i is hopefully the same as %i"</span> %(diff(<span style="color: #A3BE8C;">"v"</span>, <span style="color: #A3BE8C;">"n"</span>),diff(<span style="color: #A3BE8C;">"m"</span>, <span style="color: #A3BE8C;">"u"</span>)))
+<span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"%i is hopefully the same as %i"</span> %(diff(<span style="color: #A3BE8C;">"m"</span>, <span style="color: #A3BE8C;">"v"</span>),diff(<span style="color: #A3BE8C;">"u"</span>, <span style="color: #A3BE8C;">"n"</span>)))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">17 is hopefully the same as 8
+12 is hopefully the same as 21
+18 is hopefully the same as 8
+9 is hopefully the same as 19
+</pre>
+</div>
+
+<p>
+So what about messing with the key? Reversing both my key ideas:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org6103203">
+<span style="color: #D8DEE9;">key</span> = <span style="color: #A3BE8C;">"passion"</span>[::-<span style="color: #B48EAD; font-weight: bold;">1</span>]
+<span style="color: #81A1C1;">for</span> x <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #81A1C1;">len</span>(key)):
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"'%s' is hopefully 'muusn 31vl vnuivgsd'"</span>
+          %vigenere_encode_message(<span style="color: #A3BE8C;">"happy 31st birthday"</span>, key, x))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">'uoxhq 31si owzlzdpl' is hopefully 'muusn 31vl vnuivgsd'
+'vihhy 31hg pqjlhsnm' is hopefully 'muusn 31vl vnuivgsd'
+'pshpn 31fh jajtwqog' is hopefully 'muusn 31vl vnuivgsd'
+'zspel 31gb tariuriq' is hopefully 'muusn 31vl vnuivgsd'
+'zaecm 31al tiggvlsq' is hopefully 'muusn 31vl vnuivgsd'
+'hpcdg 31kl bxehpvsy' is hopefully 'muusn 31vl vnuivgsd'
+'wndxq 31kt qvfbzvan' is hopefully 'muusn 31vl vnuivgsd'
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org0669a95">
+<span style="color: #D8DEE9;">key</span> = <span style="color: #A3BE8C;">"yourpassion"</span>[::-<span style="color: #B48EAD; font-weight: bold;">1</span>]
+<span style="color: #81A1C1;">for</span> x <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #81A1C1;">len</span>(key)):
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"'%s' is hopefully 'muusn 31vl vnuivgsd'"</span>
+          %vigenere_encode_message(<span style="color: #A3BE8C;">"happy 31st birthday"</span>, key, x))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">'uoxhq 31si scfruriq' is hopefully 'muusn 31vl vnuivgsd'
+'vihhy 31hk vwpgvlsq' is hopefully 'muusn 31vl vnuivgsd'
+'pshpn 31jn pgehpvsy' is hopefully 'muusn 31vl vnuivgsd'
+'zspep 31mh zvfbzvan' is hopefully 'muusn 31vl vnuivgsd'
+'zaegs 31gr owzlzdpp' is hopefully 'muusn 31vl vnuivgsd'
+'hpgjm 31qg pqjlhsrs' is hopefully 'muusn 31vl vnuivgsd'
+'wrjdw 31fh jajtwuum' is hopefully 'muusn 31vl vnuivgsd'
+'yudnl 31gb tariyxow' is hopefully 'muusn 31vl vnuivgsd'
+'boncm 31al tigkbryl' is hopefully 'muusn 31vl vnuivgsd'
+'vycdg 31kl bxinvbnm' is hopefully 'muusn 31vl vnuivgsd'
+'fndxq 31kt qzlhfqog' is hopefully 'muusn 31vl vnuivgsd'
+</pre>
+</div>
+
+<p>
+More dead end. Well I feel at a total loss. I hope my puzzle maker enjoys my pain. If this was her goal, she has achieved it.
+</p>
+
+<p>
+To test my theory on salts without depending on my math skills, I decided to just try all possible salts:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org6473c7e">
+<span style="color: #D8DEE9;">target</span> = <span style="color: #A3BE8C;">"muusn 31vl vnuivgsd"</span>
+<span style="color: #D8DEE9;">found</span> = <span style="color: #81A1C1;">False</span>;
+<span style="color: #81A1C1;">for</span> key <span style="color: #81A1C1;">in</span> [<span style="color: #A3BE8C;">"passion"</span>, <span style="color: #A3BE8C;">"yourpassion"</span>, <span style="color: #A3BE8C;">"passion"</span>[::-<span style="color: #B48EAD; font-weight: bold;">1</span>], <span style="color: #A3BE8C;">"yourpassion"</span>[::-<span style="color: #B48EAD; font-weight: bold;">1</span>]]:
+    <span style="color: #81A1C1;">for</span> x <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #81A1C1;">len</span>(key)):
+        <span style="color: #81A1C1;">for</span> y <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #B48EAD; font-weight: bold;">26</span>):
+            <span style="color: #D8DEE9;">encoded</span> = vigenere_encode_message(<span style="color: #A3BE8C;">"happy 31st birthday"</span>, key, x, y)
+            <span style="color: #81A1C1;">if</span> encoded == target:
+                <span style="color: #D8DEE9;">found</span> = <span style="color: #81A1C1;">True</span>
+<span style="color: #81A1C1;">if</span> found:
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"Got it! With key: %s, salt: %i"</span>%(key, y))
+<span style="color: #81A1C1;">else</span>:
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"Didn't find a match :("</span>)
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">Didn't find a match :(
+</pre>
+</div>
+
+<p>
+Well at least that made me feel okay about my math skills.
+</p>
+
+<p>
+What if &ldquo;your passion&rdquo; referred to another string which I would call my passion, let&rsquo;s try some of those:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org96b450f">
+<span style="color: #D8DEE9;">target</span> = <span style="color: #A3BE8C;">"muusn 31vl vnuivgsd"</span>
+<span style="color: #D8DEE9;">found</span> = <span style="color: #81A1C1;">False</span>
+<span style="color: #D8DEE9;">tests</span> = <span style="color: #B48EAD; font-weight: bold;">0</span>
+<span style="color: #81A1C1;">for</span> key <span style="color: #81A1C1;">in</span> [<span style="color: #A3BE8C;">"computerscience"</span>, <span style="color: #A3BE8C;">"computers"</span>, <span style="color: #A3BE8C;">"programming"</span>, <span style="color: #A3BE8C;">"coding"</span>, <span style="color: #A3BE8C;">"shani"</span>,
+            <span style="color: #A3BE8C;">"computerprogramming"</span>, <span style="color: #A3BE8C;">"security"</span>, <span style="color: #A3BE8C;">"avatarthelastairbender"</span>,
+            <span style="color: #A3BE8C;">"hacking"</span>, <span style="color: #A3BE8C;">"computing"</span>, <span style="color: #A3BE8C;">"programminglanguages"</span>, <span style="color: #A3BE8C;">"frisbee"</span>,
+            <span style="color: #A3BE8C;">"sciencefiction"</span>, <span style="color: #A3BE8C;">"computer"</span>, <span style="color: #A3BE8C;">"concrete"</span>, <span style="color: #A3BE8C;">"ultimatefrisbee"</span>,
+            <span style="color: #A3BE8C;">"code"</span>, <span style="color: #A3BE8C;">"programs"</span>, <span style="color: #A3BE8C;">"computerprograms"</span>, <span style="color: #A3BE8C;">"cryptography"</span>, <span style="color: #A3BE8C;">"web"</span>,
+            <span style="color: #A3BE8C;">"theinternet"</span>, <span style="color: #A3BE8C;">"theweb"</span>, <span style="color: #A3BE8C;">"webdevelopment"</span>, <span style="color: #A3BE8C;">"javascript"</span>,
+            <span style="color: #A3BE8C;">"hackers"</span>, <span style="color: #A3BE8C;">"beautifulintelligentmexicanwomen"</span>,
+            <span style="color: #A3BE8C;">"lettingbeautifulintelligentmexicanwomenpunishmewithpuzzles"</span>,
+            <span style="color: #A3BE8C;">"computercode"</span>, <span style="color: #A3BE8C;">"development"</span>, <span style="color: #A3BE8C;">"programminglanguagedesign"</span>,
+            <span style="color: #A3BE8C;">"computerlanguages"</span>, <span style="color: #A3BE8C;">"computerlanguagedesign"</span>]:
+    <span style="color: #81A1C1;">for</span> x <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #81A1C1;">len</span>(key)):
+        <span style="color: #81A1C1;">for</span> y <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #B48EAD; font-weight: bold;">26</span>):
+            <span style="color: #D8DEE9;">encoded</span> = vigenere_encode_message(<span style="color: #A3BE8C;">"happy 31st birthday"</span>, key, x, y)
+            <span style="color: #D8DEE9;">tests</span> += <span style="color: #B48EAD; font-weight: bold;">1</span>
+            <span style="color: #81A1C1;">if</span> encoded == target:
+                <span style="color: #D8DEE9;">found</span> = <span style="color: #81A1C1;">True</span>
+<span style="color: #81A1C1;">if</span> found:
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"Got it! With key: %s, salt: %i"</span>%(key, y))
+<span style="color: #81A1C1;">else</span>:
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"Didn't find a match :( in %i tests"</span>%tests)
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">Didn't find a match :( in 11726 tests
+</pre>
+</div>
+
+<p>
+Well I felt really good about that try, but no dice. What about trying to derive the key, going backwards. I have two cribs, the first word &ldquo;i&rsquo;m&rdquo; and &ldquo;happy 31st birthday&rdquo;. And I think the cipher is reset at the beginning of each sentence, because of the repetition of &ldquo;l&rdquo;.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org818d085">
+<span style="color: #81A1C1;">def</span> <span style="color: #8FBCBB;">reverse_key</span>(source, encoded, salt=<span style="color: #B48EAD; font-weight: bold;">0</span>):
+    <span style="color: #D8DEE9;">arr_source</span> = <span style="color: #81A1C1;">list</span>(source)
+    <span style="color: #D8DEE9;">arr_encoded</span> = <span style="color: #81A1C1;">list</span>(encoded)
+    <span style="color: #D8DEE9;">guess</span> = <span style="color: #A3BE8C;">""</span>
+    <span style="color: #81A1C1;">for</span> i <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #81A1C1;">len</span>(source)):
+        <span style="color: #D8DEE9;">char</span> = (diff(source[i], encoded[i]) + salt) % <span style="color: #B48EAD; font-weight: bold;">26</span>
+        <span style="color: #D8DEE9;">guess</span> += <span style="color: #81A1C1;">chr</span>(char + <span style="color: #81A1C1;">ord</span>(<span style="color: #A3BE8C;">'a'</span>))
+    <span style="color: #81A1C1;">return</span> guess
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org46255c8">
+<span style="color: #81A1C1;">print</span>(reverse_key(<span style="color: #A3BE8C;">"lb"</span>,<span style="color: #A3BE8C;">"im"</span>))
+<span style="color: #81A1C1;">print</span>(reverse_key(<span style="color: #A3BE8C;">"muusnvlvnuivgsd"</span>,<span style="color: #A3BE8C;">"happystbirthday"</span>))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">xl
+vgvxlxigvxlmxiv
+</pre>
+</div>
+
+<p>
+Well those definitely aren&rsquo;t the starts of words&#x2026; but I did notice repetition! Promising. So I decided to try the salt concept again:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org69ec958">
+<span style="color: #6f7787;"># </span><span style="color: #6f7787;">Taking out the 31, spaces, and apostrophe since they are noise</span>
+<span style="color: #81A1C1;">for</span> x <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #B48EAD; font-weight: bold;">26</span>):
+    <span style="color: #81A1C1;">print</span>(reverse_key(<span style="color: #A3BE8C;">"happystbirthday"</span>,<span style="color: #A3BE8C;">"muusnvlvnuivgsd"</span>, x))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">fufdpdsufdpodsf
+gvgeqetvgeqpetg
+hwhfrfuwhfrqfuh
+ixigsgvxigsrgvi
+jyjhthwyjhtshwj
+kzkiuixzkiutixk
+laljvjyaljvujyl
+mbmkwkzbmkwvkzm
+ncnlxlacnlxwlan
+odomymbdomyxmbo
+pepnzncepnzyncp
+qfqoaodfqoazodq
+rgrpbpegrpbaper
+shsqcqfhsqcbqfs
+titrdrgitrdcrgt
+ujuseshjusedshu
+vkvtftikvtfetiv
+wlwugujlwugfujw
+xmxvhvkmxvhgvkx
+ynywiwlnywihwly
+zozxjxmozxjixmz
+apaykynpaykjyna
+bqbzlzoqbzlkzob
+crcamaprcamlapc
+dsdbnbqsdbnmbqd
+etecocrteconcre
+</pre>
+</div>
+
+<p>
+WOW! Concrete was one of my guesses earlier, and I see all its letters in this last entry! I think I&rsquo;m on to something! I notice there are gaps in the word. In my original Vigenere cipher, I did not advance the cipher on non-alphabetical characters, like spaces, punctuation, and numbers. So maybe that was a false assumption. Let&rsquo;s try again:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="orgd2e3c38">
+<span style="color: #81A1C1;">def</span> <span style="color: #8FBCBB;">vigenere_encode_message</span>(source, key, encoding_index = <span style="color: #B48EAD; font-weight: bold;">0</span>, salt = <span style="color: #B48EAD; font-weight: bold;">0</span>):
+    <span style="color: #D8DEE9;">encoded</span> = <span style="color: #A3BE8C;">""</span>
+    <span style="color: #81A1C1;">for</span> char <span style="color: #81A1C1;">in</span> source:
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">If the character is alphabetic</span>
+        <span style="color: #81A1C1;">if</span> char &gt;= <span style="color: #A3BE8C;">'a'</span> <span style="color: #81A1C1;">and</span> char &lt;= <span style="color: #A3BE8C;">'z'</span>:
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Encode before appending</span>
+            <span style="color: #D8DEE9;">encoded</span> += vigenere_encode_char(encoding_index, char, key, salt)
+        <span style="color: #81A1C1;">else</span>:
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Just append</span>
+            <span style="color: #D8DEE9;">encoded</span> += char
+
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Always shift the cipher. This is the only difference from our first attempt</span>
+        <span style="color: #D8DEE9;">encoding_index</span> += <span style="color: #B48EAD; font-weight: bold;">1</span>
+    <span style="color: #81A1C1;">return</span> encoded
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org500c0e7">
+<span style="color: #D8DEE9;">target</span> = <span style="color: #A3BE8C;">"muusn 31vl vnuivgsd"</span>
+<span style="color: #D8DEE9;">key</span> = <span style="color: #A3BE8C;">"concrete"</span>
+<span style="color: #D8DEE9;">found</span> = <span style="color: #81A1C1;">False</span>
+<span style="color: #D8DEE9;">tests</span> = <span style="color: #B48EAD; font-weight: bold;">0</span>
+<span style="color: #81A1C1;">for</span> x <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #81A1C1;">len</span>(key)):
+    <span style="color: #81A1C1;">for</span> y <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #B48EAD; font-weight: bold;">26</span>):
+        <span style="color: #D8DEE9;">encoded</span> = vigenere_encode_message(<span style="color: #A3BE8C;">"happy 31st birthday"</span>, key, x, y)
+        <span style="color: #D8DEE9;">tests</span> += <span style="color: #B48EAD; font-weight: bold;">1</span>
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">See below</span>
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">print("Got %s with offset: %i, salt: %i"%(encoded, x, y))</span>
+        <span style="color: #81A1C1;">if</span> encoded == target:
+            <span style="color: #D8DEE9;">found</span> = <span style="color: #81A1C1;">True</span>
+<span style="color: #81A1C1;">if</span> found:
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"Got it! With key: %s, salt: %i"</span>%(key, y))
+<span style="color: #81A1C1;">else</span>:
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"Didn't find a match :( in %i tests"</span>%tests)
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">Didn't find a match :( in 208 tests
+</pre>
+</div>
+
+<p>
+No dice, but I felt like I was getting much closer. I printed out every iteration that I tested, to see if I was getting closer at all. And I was! I found bits and pieces of success! Whole words from the source successfully encoded in some of the results, but never the full thing, so I&rsquo;m still missing a piece. Specifically these results:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-test">Got muusn 31xn exfwziud with offset: 5, salt: 1
+Got ksujd 31vl vnuivgsd with offset: 3, salt: 1
+Got kssql 31vl cvduxgsb with offset: 5, salt: 25
+Got kswjh 31vl vrlllgsf with offset: 2, salt: 16
+</pre>
+</div>
+
+<p>
+Between the first two results, we have all the pieces! The latter two only match the &ldquo;31vl&rdquo;, so they are probably false positives. The salt is not zero in any case, and if only the first two are true positive results, that means our salt is one. The offset is different between the first two results by 2, which is both the number of numeric characters and the number of spaces. So that tells me that in the case of spaces or the case of numerics, the offset is not shifted. Since the &ldquo;vl&rdquo; and the entire last word is correct in the second case, that tells me that it&rsquo;s probably the numbers. So let&rsquo;s try again with not advancing in the case of numbers:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org3885a27">
+<span style="color: #81A1C1;">def</span> <span style="color: #8FBCBB;">vigenere_encode_message</span>(source, key, encoding_index = <span style="color: #B48EAD; font-weight: bold;">0</span>, salt = <span style="color: #B48EAD; font-weight: bold;">0</span>):
+    <span style="color: #D8DEE9;">encoded</span> = <span style="color: #A3BE8C;">""</span>
+    <span style="color: #81A1C1;">for</span> char <span style="color: #81A1C1;">in</span> source:
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">If the character is alphabetic</span>
+        <span style="color: #81A1C1;">if</span> char &gt;= <span style="color: #A3BE8C;">'a'</span> <span style="color: #81A1C1;">and</span> char &lt;= <span style="color: #A3BE8C;">'z'</span>:
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Encode before appending</span>
+            <span style="color: #D8DEE9;">encoded</span> += vigenere_encode_char(encoding_index, char, key, salt)
+        <span style="color: #81A1C1;">else</span>:
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Just append</span>
+            <span style="color: #D8DEE9;">encoded</span> += char
+
+        <span style="color: #6f7787;">#  </span><span style="color: #6f7787;">This is the only difference from our second attempt</span>
+        <span style="color: #D8DEE9;">should_advance</span> = char != <span style="color: #A3BE8C;">" "</span>
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">should_advance = char != " " and (char &lt; '0' or char &gt; '9')</span>
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">should_advance = char &lt; '0' or char &gt; '9'</span>
+        <span style="color: #81A1C1;">if</span> should_advance:
+            <span style="color: #D8DEE9;">encoding_index</span> += <span style="color: #B48EAD; font-weight: bold;">1</span>
+    <span style="color: #81A1C1;">return</span> encoded
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org378ff2f">
+<span style="color: #D8DEE9;">target</span> = <span style="color: #A3BE8C;">"muusn 31vl vnuivgsd"</span>
+<span style="color: #D8DEE9;">key</span> = <span style="color: #A3BE8C;">"concrete"</span>
+<span style="color: #D8DEE9;">found</span> = <span style="color: #81A1C1;">False</span>
+<span style="color: #D8DEE9;">tests</span> = <span style="color: #B48EAD; font-weight: bold;">0</span>
+<span style="color: #81A1C1;">for</span> x <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #81A1C1;">len</span>(key)):
+    <span style="color: #81A1C1;">for</span> y <span style="color: #81A1C1;">in</span> <span style="color: #81A1C1;">range</span>(<span style="color: #B48EAD; font-weight: bold;">26</span>):
+        <span style="color: #D8DEE9;">encoded</span> = vigenere_encode_message(<span style="color: #A3BE8C;">"happy 31st birthday"</span>, key, x, y)
+        <span style="color: #D8DEE9;">tests</span> += <span style="color: #B48EAD; font-weight: bold;">1</span>
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">See below</span>
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">print("Got %s with offset: %i, salt: %i"%(encoded, x, y))</span>
+        <span style="color: #81A1C1;">if</span> encoded == target:
+            <span style="color: #D8DEE9;">found</span> = <span style="color: #81A1C1;">True</span>
+            <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"Got it! With key: %s, salt: %i"</span>%(key, y))
+
+<span style="color: #81A1C1;">if</span> <span style="color: #81A1C1;">not</span> found:
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"Didn't find a match :( in %i tests"</span>%tests)
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">Didn't find a match :( in 208 tests
+</pre>
+</div>
+
+<p>
+I didn&rsquo;t find an exact match, but getting very close now! After printing each test and inspecting, this was the only result that was close at all:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">Got muusn 31ky vnuivgsd with offset: 5, salt: 1
+</pre>
+</div>
+
+<p>
+The first and third words were correct, but the middle wasn&rsquo;t. I thought maybe I was wrong about advancing on numbers as well as spaces, so I tested that. There were no exact matches, but some very interesting results:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">Got muusn 31gw tnlyksob with offset: 5, salt: 1
+Got bfsem 31vl gcwwwrdq with offset: 6, salt: 1
+Got mdedb 31ky vnuivgsd with offset: 7, salt: 1
+</pre>
+</div>
+
+<p>
+The first matched only the first word, as expected since there are no spaces or numbers. The second matched only the second word, with an offset advanced by one. And the third matched only the last word, with an offset advanced by two. So maybe it wasn&rsquo;t the spaces but the numbers. I tried again with not advancing on numbers but advancing on spaces and&#x2026;
+</p>
+
+<p>
+AHA! I GOT IT!
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">Got it! With key: concrete, salt: 1
+</pre>
+</div>
+
+<p>
+No puzzle master can contain me! It only took me hours and hours and hours&#x2026; two Wikipedia pages, and countless searches about Python syntax and standard functions.
+</p>
+
+<p>
+Now, to write a decoder, all I will need is to reverse the encoder, right? That can&rsquo;t be too hard. Famous last words.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="orgbef783c">
+<span style="color: #81A1C1;">def</span> <span style="color: #8FBCBB;">vigenere_decode_message</span>(source, key, decoding_index = <span style="color: #B48EAD; font-weight: bold;">0</span>, salt = <span style="color: #B48EAD; font-weight: bold;">0</span>):
+    <span style="color: #D8DEE9;">decoded</span> = <span style="color: #A3BE8C;">""</span>
+    <span style="color: #81A1C1;">for</span> char <span style="color: #81A1C1;">in</span> source:
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">If the character is alphabetic</span>
+        <span style="color: #81A1C1;">if</span> char &gt;= <span style="color: #A3BE8C;">'a'</span> <span style="color: #81A1C1;">and</span> char &lt;= <span style="color: #A3BE8C;">'z'</span>:
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Decode before appending</span>
+            <span style="color: #D8DEE9;">decoded</span> += vigenere_decode_char(decoding_index, char, key, salt)
+        <span style="color: #81A1C1;">else</span>:
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Just append</span>
+            <span style="color: #D8DEE9;">decoded</span> += char
+
+        <span style="color: #D8DEE9;">should_advance</span> = char &lt; <span style="color: #A3BE8C;">'0'</span> <span style="color: #81A1C1;">or</span> char &gt; <span style="color: #A3BE8C;">'9'</span>
+        <span style="color: #81A1C1;">if</span> should_advance:
+            <span style="color: #D8DEE9;">decoding_index</span> += <span style="color: #B48EAD; font-weight: bold;">1</span>
+    <span style="color: #81A1C1;">return</span> decoded
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org993c9a2">
+<span style="color: #D8DEE9;">encoded</span> = <span style="color: #A3BE8C;">"muusn 31vl vnuivgsd"</span>
+<span style="color: #D8DEE9;">decoded</span> =<span style="color: #A3BE8C;">"happy 31st birthday"</span>
+<span style="color: #D8DEE9;">key</span> = <span style="color: #A3BE8C;">"concrete"</span>
+<span style="color: #D8DEE9;">attempt</span> = vigenere_decode_message(encoded, key, <span style="color: #B48EAD; font-weight: bold;">5</span>, <span style="color: #B48EAD; font-weight: bold;">1</span>)
+
+<span style="color: #81A1C1;">if</span> attempt == decoded:
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"We did it!"</span>)
+<span style="color: #81A1C1;">else</span>:
+    <span style="color: #81A1C1;">print</span>(<span style="color: #A3BE8C;">"Something's wrong... got %s"</span>%attempt)
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">We did it!
+</pre>
+</div>
+
+<p>
+Yay! It works! Now I could get the whole message! Right?
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="orgdfd4b6a">
+<span style="color: #81A1C1;">input</span>=<span style="color: #A3BE8C;">""</span>
+<span style="color: #D8DEE9;">key</span>=<span style="color: #A3BE8C;">"concrete"</span>
+<span style="color: #81A1C1;">print</span>(vigenere_decode_message(<span style="color: #81A1C1;">input</span>, key, <span style="color: #B48EAD; font-weight: bold;">0</span>, <span style="color: #B48EAD; font-weight: bold;">1</span>))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">i'n crlanm rwno k npe jdw. kks, cqfnd fvvm mv tvvyzep, ygu vso ztiz erclv zq runeut ey kt op k rgkra gcjs eglb yct hzb rwqz, g loqjzqcm mbjvyd uufbp. r sctg tqsd pkvtuo umhv aoxwrfu hyf xjct s zsxg frlhixgr dtai ye qph vq bzpbh vopoevit, efms x atiq atngygzf iut jusiar ocfzxaf efms bnzp knj jwz knj ngp, our lengthy conversations about anything at all, usp wpwuiepe ijou nbxtu tz rlhkzz lsett dzxzpcvwor ftanm dehqu. x ymslu va ml, wvaiuh, rav sfj izqa vcuexg dbc sngpccltiy mowmbuy eyi bkij. d jxjk jjee wvrjdwg tcbqz tr pbs nvhe spjv d uvqojnfv. hjftbk uarn hlku, g gder jmg tcwdj fnspl tl zcn llw xdje scmqi qtdgddh. happy 31st birthday!
+</pre>
+</div>
+
+<p>
+Well that didn&rsquo;t go as planned. But I decoded another big chunk of text properly. It is fun to see it pop out of nowhere like that! Next, I tried the same offset trick, maybe there was another offset rule I was still missing. For example, there was no punctuation in my crib, and the newly visible chunk is between two punctuation marks.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="orgee875c0">
+<span style="color: #81A1C1;">def</span> <span style="color: #8FBCBB;">vigenere_decode_message</span>(source, key, decoding_index = <span style="color: #B48EAD; font-weight: bold;">0</span>, salt = <span style="color: #B48EAD; font-weight: bold;">0</span>):
+    <span style="color: #D8DEE9;">decoded</span> = <span style="color: #A3BE8C;">""</span>
+    <span style="color: #81A1C1;">for</span> char <span style="color: #81A1C1;">in</span> source:
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">If the character is alphabetic</span>
+        <span style="color: #81A1C1;">if</span> char &gt;= <span style="color: #A3BE8C;">'a'</span> <span style="color: #81A1C1;">and</span> char &lt;= <span style="color: #A3BE8C;">'z'</span>:
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Decode before appending</span>
+            <span style="color: #D8DEE9;">decoded</span> += vigenere_decode_char(decoding_index, char, key, salt)
+        <span style="color: #81A1C1;">else</span>:
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Just append</span>
+            <span style="color: #D8DEE9;">decoded</span> += char
+
+        <span style="color: #6f7787;">#  </span><span style="color: #6f7787;">This is the only difference from our first attempt</span>
+        <span style="color: #D8DEE9;">should_advance</span> = (char &lt; <span style="color: #A3BE8C;">'0'</span> <span style="color: #81A1C1;">or</span> char &gt; <span style="color: #A3BE8C;">'9'</span>) \
+          <span style="color: #81A1C1;">and</span> char != <span style="color: #A3BE8C;">','</span> <span style="color: #81A1C1;">and</span> char != <span style="color: #A3BE8C;">'\''</span> <span style="color: #81A1C1;">and</span> char != <span style="color: #A3BE8C;">"."</span> <span style="color: #81A1C1;">and</span> char != <span style="color: #A3BE8C;">"!"</span>
+        <span style="color: #81A1C1;">if</span> should_advance:
+            <span style="color: #D8DEE9;">decoding_index</span> += <span style="color: #B48EAD; font-weight: bold;">1</span>
+    <span style="color: #81A1C1;">return</span> decoded
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python" id="orga6bf74c">
+<span style="color: #81A1C1;">input</span>=<span style="color: #A3BE8C;">""</span>
+<span style="color: #D8DEE9;">key</span>=<span style="color: #A3BE8C;">"concrete"</span>
+<span style="color: #81A1C1;">print</span>(vigenere_decode_message(<span style="color: #81A1C1;">input</span>, key, <span style="color: #B48EAD; font-weight: bold;">0</span>, <span style="color: #B48EAD; font-weight: bold;">1</span>))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">i'm really glad i met you. you, along with my kitties, are the best thing to happen to me in a truly wild year and for that, i consider myself lucky. i hope this little gift reminds you that i love whatever time we get to spend together, that i like learning the little details that make you who you are, our lengthy conversations about anything at all, the laughter that comes so easily after commenting silly stuff. i could go on, really, but ill stop before the cheesiness becomes too much. i just love feeling close to you even from a distance. having said this, i hope you enjoy today in any way your heart desires. happy 31st birthday!
+</pre>
+</div>
+
+<p>
+Wow. What a long journey. And I bet it only took my puzzle master 5 minutes to set up this adventure for me. Reading the letter, my heart was warm and my face was smiling bright. Thank you puzzle master. I figured all there was left now was to write you a note back! Of course first, one final update with my final finding.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="orgfeff5f1">
+<span style="color: #81A1C1;">def</span> <span style="color: #8FBCBB;">vigenere_encode_message</span>(source, key, encoding_index = <span style="color: #B48EAD; font-weight: bold;">0</span>, salt = <span style="color: #B48EAD; font-weight: bold;">0</span>):
+    <span style="color: #D8DEE9;">encoded</span> = <span style="color: #A3BE8C;">""</span>
+    <span style="color: #81A1C1;">for</span> char <span style="color: #81A1C1;">in</span> source:
+        <span style="color: #6f7787;"># </span><span style="color: #6f7787;">If the character is alphabetic</span>
+        <span style="color: #81A1C1;">if</span> char &gt;= <span style="color: #A3BE8C;">'a'</span> <span style="color: #81A1C1;">and</span> char &lt;= <span style="color: #A3BE8C;">'z'</span>:
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Encode before appending</span>
+            <span style="color: #D8DEE9;">encoded</span> += vigenere_encode_char(encoding_index, char, key, salt)
+        <span style="color: #81A1C1;">else</span>:
+            <span style="color: #6f7787;"># </span><span style="color: #6f7787;">Just append</span>
+            <span style="color: #D8DEE9;">encoded</span> += char
+
+        <span style="color: #6f7787;">#  </span><span style="color: #6f7787;">This is the only difference from our third attempt</span>
+        <span style="color: #D8DEE9;">should_advance</span> = (char &lt; <span style="color: #A3BE8C;">'0'</span> <span style="color: #81A1C1;">or</span> char &gt; <span style="color: #A3BE8C;">'9'</span>) \
+          <span style="color: #81A1C1;">and</span> char != <span style="color: #A3BE8C;">','</span> <span style="color: #81A1C1;">and</span> char != <span style="color: #A3BE8C;">'\''</span> <span style="color: #81A1C1;">and</span> char != <span style="color: #A3BE8C;">"."</span> <span style="color: #81A1C1;">and</span> char != <span style="color: #A3BE8C;">"!"</span>
+        <span style="color: #81A1C1;">if</span> should_advance:
+            <span style="color: #D8DEE9;">encoding_index</span> += <span style="color: #B48EAD; font-weight: bold;">1</span>
+    <span style="color: #81A1C1;">return</span> encoded
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-text">tsnfd jbm fze mhtf twpfgfe tayt. v mhtac yzh aagr zigrf mp lae owlt tayt nfroyr aad woec ybvpa fe. v dnzj b dnaw t vhn'e dbkp hnzkywl, mhl yzhjl hnk axnrbnr. woecl mixr pe gsek v tm febltay sz encs laae er nuwxkd znre tr euw eyq. nnhesiptay yzhj gtsl wlf eivr zeegagg gg tlyc tz qhu sgk sbmks nfw sbmks. v pad kfiwvfz euw wsbdx evex. lf yoc qhuc exsdnyx, t xxew lae fsfe jsr. t'z kelydr rysw t ext lgn. jbm'ke gzx mrkm euagg gztt usl snhieyrv tz ex ta focr mhla cudg mhtf rele. tno qhu pgnlo yh za pieu mhp uaepfagedf tlw qhu yade, v eogr mo yaltpa mo rnxrjgzbnr qhu fsr. eusm's jzr t sewllk wlal yzh mo fhxav xbrdg, uennmle v woy'g payg mo zals nfrtsvfz jbm wlal tz lxlw ex. huwmhpe bt'd ag zaw mzala ze hnp qxac, a clafht jsbt gg gtiw yzh mhp dhnrrkm, dgjhnrrkm shy, tz dhov qhu vf tsr xypf, aowq rofe aayq, tno lxlw qhu ugp xhua jbm mpnf tz ex. zs vofekx, t oblw lxlw qhu flkattzm, tg poy'g ue rfvrjclxd.
+</pre>
+</div>
+
+<p>
+I wonder what the key was? Probably <i>one</i> of <i>your</i> passions. And of course the salt is a truly salty number.
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Reed Spool</p>
+<p class="date">Created: 2021-04-04 Sun 00:43</p>
+</div>
+</body>
+</html>

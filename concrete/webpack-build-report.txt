@@ -1,0 +1,109 @@
+Hash: [1m2653e0ac50fff4053c03[39m[22m
+Version: webpack [1m4.44.1[39m[22m
+Time: [1m5143[39m[22mms
+Built at: 10/18/2020 [1m10:43:55 PM[39m[22m
+                                      [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m       [1mChunk Names[39m[22m
+        [1m[32m0170112234bab2a295eb3a18f218e724.js[39m[22m   2.13 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m01df918a3b14ccabba84acb00178c57c.js[39m[22m   2.38 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m0858b0836367ea324bc9c5f6749db9a1.js[39m[22m   2.62 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m101432b7228de09425cb10683cd7a721.js[39m[22m   2.31 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m12f4a310110e02f9031132de6d8548bf.js[39m[22m    2.2 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m18e852d001368f75e7f75aaaee6dfe71.js[39m[22m   2.88 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m20fa0fd52cafcf5176d15a23e497a835.js[39m[22m   3.18 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m26aa6a394ec36fa291bb1b6c75faca71.js[39m[22m   2.32 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m2ade5c4002b4710f2a1f6a5cd36c08c9.js[39m[22m   2.67 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m2b150c2332452066eaed1f53e1572720.js[39m[22m   2.97 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m2eb6240af39282952504b5e016895183.js[39m[22m   2.24 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m376ee0869ec49e5524dd216db8f7020e.js[39m[22m   3.19 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m38fba56fde71a835512d2b6072832858.js[39m[22m   2.42 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m39b630eb9c2c0319472cbf8f72e79691.js[39m[22m   3.28 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m525f94195669090c2c9ddc149e6f0599.js[39m[22m    2.9 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m59bde89bce5c1126ba5ee99c55ec48c8.js[39m[22m   2.56 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m5c85862f6de1eae7f4e50cbfe7c80b9f.js[39m[22m   2.15 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m600ab46b2572f32c5a4abf0f960e3c61.js[39m[22m   1.75 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m685f9dc3231d6a52855919bbcc8d8e8e.js[39m[22m   2.77 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m70444b162e14964ab08d5956e765b3d9.js[39m[22m    2.3 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m7508d134804c21d34e50379103e765c0.js[39m[22m   26.9 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m76cb9827afdb9572851dc1d8d03e5750.js[39m[22m    2.5 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m7b239aaf669748b6ce7bb6ecf372e783.js[39m[22m   2.36 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m7e5c69c01b5cb218a1f3d21d4e96f6f0.js[39m[22m   2.64 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m7ef987bad3b8fbb56f596649fbedee0b.js[39m[22m   2.16 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m83b8277db0b3c46f118c37b93cacbd62.js[39m[22m   2.87 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m8d3efd157f0bf2a3a0d6dd932878880b.js[39m[22m   2.28 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m95e69fbb6dbd2e50782c54240da95fa1.js[39m[22m   3.09 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32m9cf89836df93b01b418c4e55a5cbc0f8.js[39m[22m   6.45 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32ma7ee57271362584c03afcd3587284a2b.js[39m[22m   3.55 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32maab0e77c1d1dba595ee4e19112eec921.js[39m[22m   1.99 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32mb5039d230111eb20d09d845f3bd9e240.js[39m[22m   2.95 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32mcf816f70242478c5fd7060c4a028ae50.js[39m[22m   2.85 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32md21451f11085978633c326c46bab30db.js[39m[22m   2.44 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32md228be11b45e9a0bbd44acf24b9a2b41.js[39m[22m   2.44 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32me8a90b8da6f1cc34bb3ae09d2dae077d.js[39m[22m    2.7 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32me920af9f7a50e1c8fe0b0b3cd19937bf.js[39m[22m   2.43 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+        [1m[32mf693e8290e3a15a35d2b28f78c3d3533.js[39m[22m   2.52 KiB        [1m[39m[22m  [1m[32m[emitted] [immutable][39m[22m         
+                                 [1m[32mindex.html[39m[22m   10.5 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m                     
+               [1m[32mmain.84865962c40d487484bd.js[39m[22m   70.7 KiB       [1m0[39m[22m  [1m[32m[emitted] [immutable][39m[22m         main
+           [1m[32mmain.84865962c40d487484bd.js.map[39m[22m    278 KiB       [1m0[39m[22m  [1m[32m[emitted] [dev][39m[22m               main
+                                   [1m[32mmain.css[39m[22m   7.65 KiB       [1m0[39m[22m  [1m[32m[emitted][39m[22m                     main
+            [1m[32mruntime.749f8be3d5818e7618fe.js[39m[22m   1.51 KiB       [1m1[39m[22m  [1m[32m[emitted] [immutable][39m[22m         runtime
+        [1m[32mruntime.749f8be3d5818e7618fe.js.map[39m[22m   8.07 KiB       [1m1[39m[22m  [1m[32m[emitted] [dev][39m[22m               runtime
+            [1m[33mvendors.a8b6e34c4afc160ad639.js[39m[22m    [1m[33m737 KiB[39m[22m       [1m2[39m[22m  [1m[32m[emitted] [immutable][39m[22m  [1m[33m[big][39m[22m  vendors
+[1m[32mvendors.a8b6e34c4afc160ad639.js.LICENSE.txt[39m[22m  811 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m                     
+        [1m[32mvendors.a8b6e34c4afc160ad639.js.map[39m[22m   2.56 MiB       [1m2[39m[22m  [1m[32m[emitted] [dev][39m[22m               vendors
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m = [1m[32mruntime.749f8be3d5818e7618fe.js[39m[22m [1m[32mruntime.749f8be3d5818e7618fe.js.map[39m[22m [1m[32mvendors.a8b6e34c4afc160ad639.js[39m[22m [1m[32mvendors.a8b6e34c4afc160ad639.js.map[39m[22m [1m[32mmain.css[39m[22m [1m[32mmain.84865962c40d487484bd.js[39m[22m [1m[32mmain.84865962c40d487484bd.js.map[39m[22m
+[0] [1mmulti ./src/assets/js/site.js[39m[22m 28 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+[B9Yq] [1m(webpack)/buildin/amd-define.js[39m[22m 85 bytes {[1m[33m2[39m[22m}[1m[32m [built][39m[22m
+[Fbac] [1m./node_modules/xstate/es/index.js + 2 modules[39m[22m 2.57 KiB {[1m[33m2[39m[22m}[1m[32m [built][39m[22m
+    |    3 modules
+[OzZv] [1m./src/assets/scss/site.scss[39m[22m 49 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+[RkpP] [1m./src/assets/js/site.js + 23 modules[39m[22m 191 KiB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    | [1m./src/assets/js/site.js[39m[22m 333 bytes[1m[32m [built][39m[22m
+    | [1m./src/assets/js/uiMachine.js[39m[22m 15.1 KiB[1m[32m [built][39m[22m
+    | [1m../concrete/v0.0.5/interpreter/Pretty.js[39m[22m 2.05 KiB[1m[32m [built][39m[22m
+    | [1m./src/assets/js/concreteRunnerMachine.js[39m[22m 6.39 KiB[1m[32m [built][39m[22m
+    | [1m../concrete/v0.0.5/interpreter/stepInterpreterMachine.js[39m[22m 34.2 KiB[1m[32m [built][39m[22m
+    | [1m../concrete/v0.0.5/interpreter/runnableInterpreterMachine.js[39m[22m 4.92 KiB[1m[32m [built][39m[22m
+    | [1m../concrete/v0.0.5/interpreter/Parse.js[39m[22m 858 bytes[1m[32m [built][39m[22m
+    | [1m../concrete/v0.0.5/interpreter/Access.js[39m[22m 2.66 KiB[1m[32m [built][39m[22m
+    | [1m../concrete/v0.0.5/interpreter/executors/addition.js[39m[22m 2.73 KiB[1m[32m [built][39m[22m
+    | [1m../concrete/v0.0.5/interpreter/executors/multiplication.js[39m[22m 2.57 KiB[1m[32m [built][39m[22m
+    | [1m../concrete/v0.0.5/interpreter/executors/value.js[39m[22m 3 KiB[1m[32m [built][39m[22m
+    | [1m../concrete/v0.0.5/interpreter/executors/jump.js[39m[22m 1.84 KiB[1m[32m [built][39m[22m
+    | [1m../concrete/v0.0.5/interpreter/executors/ifjump.js[39m[22m 2.61 KiB[1m[32m [built][39m[22m
+    | [1m../concrete/v0.0.5/interpreter/executors/copy.js[39m[22m 1.99 KiB[1m[32m [built][39m[22m
+    | [1m../concrete/v0.0.5/interpreter/executors/set.js[39m[22m 2.8 KiB[1m[32m [built][39m[22m
+    |     + 9 hidden modules
+[YuTi] [1m(webpack)/buildin/module.js[39m[22m 497 bytes {[1m[33m2[39m[22m}[1m[32m [built][39m[22m
+[bJUj] [1m./node_modules/xstate/es/StateNode.js + 1 modules[39m[22m 50.4 KiB {[1m[33m2[39m[22m}[1m[32m [built][39m[22m
+    |    2 modules
+[o6+l] [1m../concrete/v0.0.5/node_modules/xstate/es/Machine.js + 6 modules[39m[22m 65.6 KiB {[1m[33m2[39m[22m}[1m[32m [built][39m[22m
+    |    7 modules
+[w6Cq] [1m./node_modules/ace-builds/src-noconflict sync ./node_modules/file-loader/dist/cjs.js?esModule=false ^\.\/theme\-.*\.js$[39m[22m 1.12 KiB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+[yLpj] [1m(webpack)/buildin/global.js[39m[22m 472 bytes {[1m[33m2[39m[22m}[1m[32m [built][39m[22m
+    + 73 hidden modules
+
+[1m[33mWARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  vendors.a8b6e34c4afc160ad639.js (737 KiB)[39m[22m
+
+[1m[33mWARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (816 KiB)
+      runtime.749f8be3d5818e7618fe.js
+      vendors.a8b6e34c4afc160ad639.js
+      main.css
+      main.84865962c40d487484bd.js
+[39m[22m
+
+[1m[33mWARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/[39m[22m
+Child [1mHtmlWebpackCompiler[39m[22m:
+     1 asset
+    Entrypoint [1mHtmlWebpackPlugin_0[39m[22m = [1m[32m__child-HtmlWebpackPlugin_0[39m[22m
+    [MFLM] [1m./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html[39m[22m 10.7 KiB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+Child [1mextract-css-chunks-webpack-plugin node_modules/css-loader/dist/cjs.js?sourceMap!node_modules/sass-loader/dist/cjs.js?sourceMap!src/assets/scss/site.scss[39m[22m:
+    Entrypoint [1mextract-css-chunks-webpack-plugin[39m[22m = [1m[32m*[39m[22m
+    [2NHN] [1m./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/sass-loader/dist/cjs.js?sourceMap!./src/assets/scss/site.scss[39m[22m 23.9 KiB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+        + 1 hidden module

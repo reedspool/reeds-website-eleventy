@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <base href="/concrete/index.html">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concrete</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="main.css" rel="stylesheet"></head>
+    <body class="is-viewing-editor theme-light">
+        <!-- <body class="is-viewing-stepper theme-light"> <!-- Testing stepper  -->
+        <!-- <body class="is-viewing-runner theme-light"> --> <!-- Testing runner  -->
+        <header class="layout-header">
+            <div class="headline">
+                <h1>Concrete Programming Language</h1>
+                <h2>Live Evaluator</h2>
+            </div>
+            <nav class="nav">
+                <ul class="button-row button-row-main reset-visual-list">
+                    <li class="button-row-show-editor-button">
+                        <a class="visual-button visual-button-editor" data-show-view="editor" data-focus-editor draggable="false">
+                            <div class="visual-button-content">
+                                Edit&nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="heroicon-eye">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="button-row-show-and-step-button">
+                        <a class="visual-button visual-button-stepper" data-show-view="stepper" data-step draggable="false">
+                            <div class="visual-button-content">Step</div>
+                        </a>
+                    </li>
+                    <li class="button-row-show-stepper-button">
+                        <a class="visual-button visual-button-stepper" data-show-view="stepper" draggable="false">
+                            <div class="visual-button-content">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="heroicon-eye">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="button-row-show-and-run-button">
+                        <a class="visual-button visual-button-runner" data-show-view="runner" data-run draggable="false">
+                            <div class="visual-button-content">Run</div>
+                        </a>
+                    </li>
+                    <li class="button-row-show-runner-button">
+                        <a class="visual-button visual-button-runner" data-show-view="runner" draggable="false">
+                            <div class="visual-button-content">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="heroicon-eye">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul> 
+            </nav>
+            <div class="module-controls viewable view-editor">
+                <ul class="button-row reset-visual-list button-row-controls button-row-controls-editor">
+                    <li class="button-row-controls-editor-load-code-button">
+                        <div class="visual-button visual-button-editor">
+                            <select class="visual-button-content">
+                                <option value="">Load sample code</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="module-controls viewable view-stepper">
+                <ul class="button-row reset-visual-list button-row-controls button-row-controls-stepper">
+                    <li class="button-row-controls-stepper-reset-button">
+                        <a class="visual-button visual-button-stepper" data-step draggable="false">
+                            <div class="visual-button-content">Reset</div>
+                        </a>
+                    </li>
+                    <li class="button-row-controls-stepper-step-once-button">
+                        <a class="visual-button visual-button-stepper" data-step-once draggable="false">
+                            <div class="visual-button-content">Step Once</div>
+                        </a>
+                    </li>
+                    <li class="button-row-controls-stepper-step-ten-button">
+                        <a class="visual-button visual-button-stepper" data-step-ten draggable="false">
+                            <div class="visual-button-content">Step Ten</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="module-controls viewable view-runner">
+                <ul class="button-row reset-visual-list button-row-controls button-row-controls-runner">
+                    <li class="button-row-controls-runner-rerun-button">
+                        <a class="visual-button visual-button-runner" data-run draggable="false">
+                            <div class="visual-button-content">Re-run</div>
+                        </a>
+                    </li>
+                    <li class="button-row-controls-runner-clear-button">
+                        <a class="visual-button visual-button-runner" data-clear draggable="false">
+                            <div class="visual-button-content">Clear Output</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <article class="area viewable view-editor">
+            <div id="main-ace-editor"></div>
+        </article>
+        <article class="area viewable view-stepper">
+            <div class="stepper">
+                <h3>Status</h3>
+                <div class="stepper-state">
+                    <div class="stepper-state-status is-status-halted" data-stepper-status>Halted</div>
+                    <div class="current">Step: <span data-stepper-step>0</span></div>
+                </div>
+                <h3>Stack</h3>
+                <ul class="stepper-stack reset-visual-list" data-stepper-stack>
+                    <template data-template-stepper-frame>
+                        <li class="stepper-frame is-stepper-frame-active" data-stepper-frame>
+                            <h4 class="stepper-frame-metrics-title">Metrics</h4>
+                            <table class="stepper-frame-metrics">
+                                <tr>
+                                    <td>Depth</td>
+                                    <td data-stepper-frame-depth>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Head</td>
+                                    <td data-stepper-frame-head>0</td>
+                                </tr>
+                            </table>
+                            <h4 class="stepper-frame-parameters-tape-title">Parameters</h4>
+                            <ul class="stepper-frame-parameters-tape stepper-frame-tape reset-visual-list" data-stepper-frame-parameters-tape>
+                            </ul>
+                            <h4 class="stepper-frame-running-tape-title">Tape</h4>
+                            <ul class="stepper-frame-running-tape stepper-frame-tape reset-visual-list" data-stepper-frame-running-tape>
+                            </ul>
+                            <h4>Argument List</h4>
+                            <ul class="stepper-frame-tape reset-visual-list stepper-frame-argument-list" data-stepper-frame-arguments>
+                            </ul>
+                        </li>
+                    </template>
+                    <template data-template-stepper-frame-tape-block>
+                        <li class="stepper-frame-tape-block" data-stepper-frame-tape-block>
+                            <div class="stepper-frame-tape-comma" data-stepper-frame-tape-comma>
+                                ,
+                            </div>
+                            <div class="stepper-frame-tape-block-name" data-stepper-frame-tape-block-name></div>
+                            <div class="stepper-frame-tape-block-value" data-stepper-frame-tape-block-value>test</div>
+                        </li>
+                    </template>
+                    <template data-template-stepper-frame-tape-comma>
+                    </template>
+                </ul>
+            </div>
+        </article>
+        <article class="area viewable view-runner">
+            <div class="runner">
+                <div class="result output-area">
+                    <h3 class="title">Result</h3>
+                    <code class="content"><pre data-run-result>No result yet</pre></code>
+                </div>
+                <div class="log output-area">
+                    <h3 class="title">Output</h3>
+                    <code class="content" data-run-log-scroll-box><pre data-run-log>No output yet</pre></code>
+                </div>
+            </div>
+        </article>
+    <script src="runtime.749f8be3d5818e7618fe.js"></script><script src="vendors.a8b6e34c4afc160ad639.js"></script><script src="main.84865962c40d487484bd.js"></script></body>
+</html>
