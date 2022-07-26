@@ -1,0 +1,24 @@
+{
+  "name": "reeds-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --config=eleventy.config.js --serve",
+    "build": "eleventy --config=eleventy.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reedspool/reeds-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reedspool/reeds-website/issues"
+  },
+  "homepage": "https://github.com/reedspool/reeds-website#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
