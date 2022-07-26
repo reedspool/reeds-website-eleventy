@@ -1,0 +1,30 @@
+#+title: Reed's Website
+
+Live at https://reeds.website
+
+* Technology
+
+- Eleventy
+- Netlify
+
+
+* File structure
+
+- =eleventy.config.js= See https://www.11ty.dev/docs/config/
+- =static/= contains a file structure which will be copied verbatim to the deployment. Things directly under =static/= will be available at the root of the website, e.g. =static/404.html= is available at =reeds.website/404=.
+  - =404.html= By default, Netlify serves this page for any 404 errors.
+- =src/= contains the source tree for dynamically generated pages.
+- =dist/= will appear if you run =npm run build=, containing the production build.
+* Development Environment
+
+1. Clone this repository
+2. =npm install= to install Node dependencies, such as Eleventy.
+3. =npm start= to run Eleventy's development server.
+   - This will watch for changes, rebuild changed pages, and automatically reload the browser!
+4. Navigate to the URL in the terminal to view the running site.
+
+* Deployment
+
+Netlify takes care of deployment. Whenever a push to the =master= branch occurs, Netlify will automatically build and deploy the site.
+
+If you'd like to see a local preview of the deployment build, run =npm run build= and load =dist/index.html= in your browser.
