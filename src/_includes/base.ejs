@@ -84,6 +84,29 @@
              list-style: none;
          }
 
+         ol, ol[role=list], ul, ul[role=list] {
+             padding-left: 0.2rem;
+         }
+
+         ol {
+             list-style: none;
+             counter-reset: counter-function;
+         }
+
+         ol li {
+             counter-increment: counter-function;
+             margin: 0.1rem;
+             display: flex;
+             align-items: center; /* adjust as needed */
+         }
+
+         ol li::before {
+             content: counter(counter-function) ".";
+             flex: 0 0 1.8rem;
+             text-align: left;
+             margin-right: 0rem; /* adjust as needed */
+         }
+
          h1, h2 {
              font-weight: normal;
          }
