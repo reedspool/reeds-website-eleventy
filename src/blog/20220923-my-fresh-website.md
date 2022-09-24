@@ -1,5 +1,6 @@
 ---
 title: My Fresh Website
+discussionUrl: https://www.reddit.com/r/reedswebsite/comments/xmnrq4/my_fresh_website/
 ---
 
 # My Fresh Website

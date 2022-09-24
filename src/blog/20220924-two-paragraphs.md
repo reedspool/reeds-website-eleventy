@@ -1,5 +1,6 @@
 ---
 title: Two Paragraphs
+discussionUrl: https://www.reddit.com/r/reedswebsite/comments/xmns77/these_two_paragraphs_will_save_your_job/
 ---
 
 # These Two Paragraphs Will Save Your Job

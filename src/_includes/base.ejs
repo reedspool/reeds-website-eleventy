@@ -179,6 +179,15 @@
         </header>
         <main hx-boost="true">
             <%- content %>
+
+            <% if (typeof discussionUrl !== "undefined") { %>
+                <div class="box">
+                    <strong class="block titlebar">Discuss</strong>
+                    <p>
+                        Discuss this post in <a href="<%- discussionUrl %>" target="_blank">the official thread</a> in the subreddit.
+                    </p>
+                </div>
+            <% } %>
         </main>
         <footer class="navbar">
             <nav class="f-row margin-inline">
