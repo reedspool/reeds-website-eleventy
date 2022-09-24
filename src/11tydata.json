@@ -1,0 +1,4 @@
+{
+    "layout": "base",
+    "templateEngineOverride": "ejs,md"
+}

@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/reedspool/reeds-website#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1"
+    "@11ty/eleventy": "^1.0.2"
   }
 }
