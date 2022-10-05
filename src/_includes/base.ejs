@@ -269,7 +269,7 @@
                     <p>
                         To give me feedback on this post, select some text.
                         A "Comment" button will appear. Click that and fill
-                        out the form which appears. I really appreciate your
+                        out the form that appears. I really appreciate your
                         feedback!
                     </p>
                     <p>
@@ -311,7 +311,18 @@
                      hide me
                    "
         >Comment</button>
-        <div class="comment box" style="display: none;">
+        <div class="comment box" style="display: none;"
+             _="
+                    on resetResults
+                          hide the first <.box.ok /> in me
+                          hide the first <.box.bad /> in me
+
+                    on reset
+                       trigger resetResults
+                       set #comment-content's value to ''
+                       hide me
+                    "
+        >
             <strong
                 class="block titlebar"
                 style="display: flex; justify-content: space-between;"
@@ -321,8 +332,28 @@
                         _="on click hide closest <.comment />"
                 >X</button>
             </strong>
-            <form method="POST" name="article-comment" hx-post="/" data-netlify="true" class="table" netlify-honeypot="bot-field">
-                <p>Send a comment to me. Your selection will be included.</p>
+            <form
+                method="POST"
+                name="article-comment"
+                hx-post="/"
+                hx-swap="none"
+                data-netlify="true"
+                class="table"
+                netlify-honeypot="bot-field"
+                _="
+                        on htmx:responseError
+                          hide the first <.box.ok /> in me
+                          show the first <.box.bad /> in me
+
+                        on htmx:afterSettle
+                          show the first <.box.ok /> in me
+                          hide the first <.box.bad /> in me
+
+                        on htmx:beforeRequest
+                          trigger resetResults on closest <.comment />
+                        "
+            >
+                <p>I want to hear from you! Your selection will be included:</p>
 
                 <p>
                     <blockquote style="white-space: pre-wrap;">Your selection</blockquote>
@@ -358,12 +389,38 @@
                 <p>
                     <input type="submit" name="submit" value="Submit" id="comment-submit" />
                     <button class="close-button"
-                            _="on click hide closest <.comment /> then halt"
+                            _="
+                                   on click
+                                     send resetResults to closest <.comment />
+                                     hide closest <.comment />
+                                     halt"
                     >Cancel</button>
                 </p>
+                <div class="box ok" style="display: none;">
+                    <p>
+                        <strong>Submitted, thank you!</strong>
+                        <button
+                            style="margin-inline-start: var(--gap);"
+                            _="
+                               on click
+                                 send reset to closest <.comment />
+                                 halt
+                               "
+                        >Clear and close comment box</button>
+                    </p>
+                </div>
+                <div class="box bad" style="display:none;">
+                    <p><strong>Something went wrong :-/</strong></p>
+                    <p>
+                        I'm sorry, I don't know what happened.
+                        Please email me your comment at
+                        <a href="mailto:reedwith2es@gmail.com">reed2with2es@gmail.com</a>
+                        instead, as I really want to read your comment.
+                        Don't waste your time resubmitting as I can't guarantee
+                        this won't happen again.
+                    </p>
+                </div>
                 <p><em>P.S. Don't worry about an imperfect selection. I'll also get the context.</em></p>
-
-
             </form>
         </div>
     </body>
