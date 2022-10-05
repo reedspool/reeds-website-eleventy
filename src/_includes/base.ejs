@@ -112,6 +112,10 @@
              font-weight: normal;
          }
 
+         button, input[type="submit"] {
+             cursor: pointer;
+         }
+
          /* End modifications to missing.style */
 
          body > svg { display: none; }
@@ -139,7 +143,7 @@
              text-decoration: underline;
          }
 
-         .comment {
+         .comment-start {
              position: fixed;
              top: 0;
              left: 0;
@@ -188,10 +192,12 @@
             <article
                 _="
                    init
+                     set $commentStart to <.comment-start />
                      set $comment to <.comment />
                      set $commentQuote to first <blockquote /> in $comment
                      set $commentSelectionInput to #comment-selection in $comment
                      set $commentContext to #comment-context in $comment
+                     set $commentTargetContainer to null
                    end
 
            on selectionchange from document
@@ -201,7 +207,7 @@
              -- then cancel the event entirely
              set anchorElement to selection.anchorNode
              if anchorElement.nodeType is Node.TEXT_NODE then
-               set anchorElement to container.parentElement
+               set anchorElement to anchorElement.parentElement
              end
              get the closest <.comment /> to the anchorElement
              if the result is not null then
@@ -215,44 +221,38 @@
              -- Determine which comes later, the anchor or the focus
              -- https://stackoverflow.com/a/23512678
              set position to selection.anchorNode.compareDocumentPosition(selection.focusNode)
-             set container to selection.focusNode
+             set $commentTargetContainer to selection.focusNode
              set isSameNodeAndBackwards to ((position is 0) and (selection.anchorOffset > selection.focusOffset))
              if isSameNodeAndBackwards or (position is Node.DOCUMENT_POSITION_PRECEDING) then
-               set container to selection.anchorNode
+               set $commentTargetContainer to selection.anchorNode
              end
 
              -- Find the container paragraph or other element (not text node)
-             if container.nodeType is Node.TEXT_NODE then
-               set container to container.parentElement
+             if $commentTargetContainer.nodeType is Node.TEXT_NODE then
+               set $commentTargetContainer to $commentTargetContainer.parentElement
              end
-             get the closest <p /> to container
+             get the closest <p /> to $commentTargetContainer
              if the result is not null then
                set conatiner to the result
              end
 
+
              -- Don't show the comment widget if the selection expands outside of the article
-             get the closest <article /> to container
+             get the closest <article /> to $commentTargetContainer
              if the result is null then exit end
 
              -- Align widget with the container
-             measure element container's left, bottom
-             set $comment's *left to left px
-             set $comment's *top to (bottom + 10) px
-             --  I wanted to try this instead of measurements:
-             --    can we jsut put the thing inline? Just put it in the document
-             --    flow after the paragraph? The problem came when the user's
-             --    selection could now flow into the comment, and then
-             --    we would be trying to put the comment in the comment and it
-             --    would fart hard
-             --    put $comment after container
+             measure element $commentTargetContainer's left, bottom
+             set $commentStart's *left to left px
+             set $commentStart's *top to (bottom + 10) px
 
-             show $comment
+             show $commentStart
 
              -- put the text into the comment's quote area AND a hidden input
              put selection.toString() into $commentQuote
-             -- add the greater context of the entire container's text
-             put innerText of container into $commentContext's value
              put selection.toString() into $commentSelectionInput's value
+             -- add the greater context of the entire $commentTargetContainer's text
+             put innerText of $commentTargetContainer into $commentContext's value
            "
             >
                 <%- content %>
@@ -286,6 +286,16 @@
                 </ul>
             </nav>
         </footer>
+        <button
+            class="comment-start"
+            style="display: none; padding-inline: var(--gap); padding-block: calc(var(--gap) / 4); border-radius: var(--gap);"
+            _="
+                   on click
+                     put $comment after $commentTargetContainer
+                     show $comment
+                     hide me
+                   "
+        >Comment</button>
         <div class="comment box" style="display: none;">
             <strong
                 class="block titlebar"
@@ -330,12 +340,15 @@
                         Don’t fill this out if you’re human: <input name="bot-field" />
                     </label>
                 </p>
-                <p><input type="submit" name="submit" value="Submit" /></p>
+                <p>
+                    <input type="submit" name="submit" value="Submit" id="comment-submit" />
+                    <button class="close-button"
+                            _="on click hide closest <.comment /> then halt"
+                    >Cancel</button>
+                </p>
                 <p><em>P.S. Don't worry about an imperfect selection. I'll also get the context.</em></p>
 
-                <button class="close-button"
-                        _="on click hide closest <.comment /> then halt"
-                >Cancel</button>
+
             </form>
         </div>
     </body>
