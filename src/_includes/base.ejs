@@ -254,8 +254,8 @@
              show $commentStart
 
              -- put the text into the comment's quote area AND a hidden input
-             put selection.toString() into $commentQuote
-             put selection.toString() into $commentSelectionInput's value
+             put selection.toString().trim() into $commentQuote
+             put selection.toString().trim() into $commentSelectionInput's value
              -- add the greater context of the entire $commentTargetContainer's text
              put innerText of $commentTargetContainer into $commentContext's value
            "
