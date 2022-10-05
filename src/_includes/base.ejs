@@ -138,6 +138,12 @@
          a:hover .logo {
              text-decoration: underline;
          }
+
+         .comment {
+             position: fixed;
+             top: 0;
+             left: 0;
+         }
         </style>
 
     </head>
@@ -171,7 +177,7 @@
                                     <use xlink:href="#symLogo" x="0" y="0" />
                                 </svg>&nbsp;reed's website</a></li>
                 </ul>
-                    <hr />
+                <hr />
                 <ul role="list">
                     <li><a href="/blog">blog</a></li>
                     <li><a href="/work.html">work</a></li>
@@ -179,7 +185,78 @@
             </nav>
         </header>
         <main hx-boost="true">
-            <%- content %>
+            <article
+                _="
+                   init
+                     set $comment to <.comment />
+                     set $commentQuote to first <blockquote /> in $comment
+                     set $commentSelectionInput to #comment-selection in $comment
+                     set $commentContext to #comment-context in $comment
+                   end
+
+           on selectionchange from document
+             set selection to document.getSelection()
+
+             -- First, if the selection is changing to within the comment
+             -- then cancel the event entirely
+             set anchorElement to selection.anchorNode
+             if anchorElement.nodeType is Node.TEXT_NODE then
+               set anchorElement to container.parentElement
+             end
+             get the closest <.comment /> to the anchorElement
+             if the result is not null then
+                   halt the event
+                   exit
+             end
+
+             -- Don't do anything if the selection is empty
+             if selection.isCollapsed then exit end
+
+             -- Determine which comes later, the anchor or the focus
+             -- https://stackoverflow.com/a/23512678
+             set position to selection.anchorNode.compareDocumentPosition(selection.focusNode)
+             set container to selection.focusNode
+             set isSameNodeAndBackwards to ((position is 0) and (selection.anchorOffset > selection.focusOffset))
+             if isSameNodeAndBackwards or (position is Node.DOCUMENT_POSITION_PRECEDING) then
+               set container to selection.anchorNode
+             end
+
+             -- Find the container paragraph or other element (not text node)
+             if container.nodeType is Node.TEXT_NODE then
+               set container to container.parentElement
+             end
+             get the closest <p /> to container
+             if the result is not null then
+               set conatiner to the result
+             end
+
+             -- Don't show the comment widget if the selection expands outside of the article
+             get the closest <article /> to container
+             if the result is null then exit end
+
+             -- Align widget with the container
+             measure element container's left, bottom
+             set $comment's *left to left px
+             set $comment's *top to (bottom + 10) px
+             --  I wanted to try this instead of measurements:
+             --    can we jsut put the thing inline? Just put it in the document
+             --    flow after the paragraph? The problem came when the user's
+             --    selection could now flow into the comment, and then
+             --    we would be trying to put the comment in the comment and it
+             --    would fart hard
+             --    put $comment after container
+
+             show $comment
+
+             -- put the text into the comment's quote area AND a hidden input
+             put selection.toString() into $commentQuote
+             -- add the greater context of the entire container's text
+             put innerText of container into $commentContext's value
+             put selection.toString() into $commentSelectionInput's value
+           "
+            >
+                <%- content %>
+            </article>
 
             <% if (typeof discussionUrl !== "undefined") { %>
                 <div class="box">
@@ -209,5 +286,57 @@
                 </ul>
             </nav>
         </footer>
+        <div class="comment box" style="display: none;">
+            <strong
+                class="block titlebar"
+                style="display: flex; justify-content: space-between;"
+            >
+                Comment
+                <button class="close-button"
+                        _="on click hide closest <.comment />"
+                >X</button>
+            </strong>
+            <form method="POST" name="article-comment" data-netlify="true" class="table" netlify-honeypot="bot-field">
+                <p>Send a comment to me. Your selection will be included.</p>
+
+                <p>
+                    <blockquote>Your selection</blockquote>
+                </p>
+                <p style="display: none;">
+                    <label for="comment-selection">Your selection:</label>
+                    <textarea
+                        name="selection"
+                        id="comment-selection"
+                        style="width: 100%;"
+                    ></textarea>
+                </p>
+                <p>
+                    <label for="comment-content">Your comment:</label>
+                    <textarea
+                        name="content"
+                        id="comment-content"
+                        style="width: 100%;"
+                    ></textarea>
+                </p>
+                <p style="display: none;">
+                    <label for="comment-context">The context:</label>
+                    <textarea
+                        name="context"
+                        id="comment-context"
+                    ></textarea>
+                </p>
+                <p style="display: none;">
+                    <label>
+                        Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                </p>
+                <p><input type="submit" name="submit" value="Submit" /></p>
+                <p><em>P.S. Don't worry about an imperfect selection. I'll also get the context.</em></p>
+
+                <button class="close-button"
+                        _="on click hide closest <.comment /> then halt"
+                >Cancel</button>
+            </form>
+        </div>
     </body>
 </html>
