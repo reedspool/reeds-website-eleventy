@@ -38,8 +38,6 @@ Just write? No one writes like that in the middle of work. What's the point? Whe
 
 The mysterious advice stuck with me after I closed the browser tab. I went back to Reddit to scroll through my afternoon break.
 
-## Why Not?
-
 A week later, one day before our big release, I took on a task that I thought was easy. I got stuck. My usual panic behavior set in.
 
 I caught myself before I opened Reddit. I remembered the advice from the article. I took a deep breath and opened Notepad.
@@ -58,37 +56,35 @@ Did I write enough? Did I overexplain? How big are these paragraphs supposed to 
 
 I looked at my two paragraphs with half doubt and half pride. I accomplished something, but I did not know what to expect next. I went to lunch.
 
-## The Answer
+When I returned from lunch, my two paragraphs were waiting for me. They looked unfamiliar. I did not remember what I wrote.
 
-When I returned from lunch, my two paragraphs were waiting for me. As I reread my own words, I found the answer I needed.
+As I reread my own words, I found the answer I needed. I had picked one solution based on my previous ticket's requirements. So my next step was to look for another solution which satisfied both tickets.
 
-I had picked one solution based on my previous ticket's requirements. So my next step would be to look for another solution which satisfied both tickets.
+I knew my immediate next step. I was no longer stuck. I felt my shoulders relax as I went to the search engine. I forget how tense I get when I'm stuck.
 
-I was shocked, angry, and elated. Did the advice work? How could that stupid article actually help me? I couldn't deny that I was no longer stuck. I knew my immediate next step.
+I also felt a little confused and bitter. Did the advice work? How could that stupid article actually help me?
 
-## Help
 A week later, I got stuck on another task. Would it work again? I wrote two paragraphs and went to lunch exactly as before.
 
 When I got back, I reread what I wrote, but nothing happened&mdash;no miraculous epiphany. The first time was a fluke. The advice was silly.
 
 I decided to do what I normally do when stuck, message my coworker. As I wrote my request for help, I realized with horror that my message matched my two paragraphs word-for-word. I stubbornly copied and pasted my two paragraphs from Notepad instead.
 
-## To Write
+The two paragraphs were better than my usual "hey, you got a minute?". My coworker appreciated the complete description. She pointed me in the right direction over a few messages. Normally that took an uncomfortably long Zoom call.
+
+The two paragraph exercise forced me to think through the issue before I reached out. I admitted to myself that the advice worked again.
 
 In the two weeks since, I repeated the pattern a few times:
 
 1. I'm stuck
-2. Write two paragraphs
+2. I write two paragraphs
 3. ???
-4. No longer stuck
+4. I'm no longer stuck
 
 The third step in the pattern seems random. Sometimes I found my answer. Sometimes I messaged a coworker. Sometimes I realized I was missing some critical piece of the puzzle that I had to go research.
 
-When I did reach out to my coworkers, I found them more willing to help. The help they gave was better too. They liked the complete description of my situation better than my previous messages. Two paragraphs is better than "hey, you got a minute?"
-
 One time the paragraphs didn't help. It felt like a waste of 10 minutes. But four out of five ain't bad.
 
-## Two Paragraphs
 For a few weeks, I was too proud to share the strategy with anyone. The great programmers who I admire on YouTube only write bit-mashing arcana under vaporwave neon lights. They don't write dry English in Notepad.
 
 Eventually I told my manager. I expected a laugh, but he told me he writes paragraphs too. He said I should write my own article about it. Maybe I will.
