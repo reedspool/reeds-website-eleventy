@@ -207,6 +207,7 @@
 
            on selectionchange from document
              set selection to document.getSelection()
+             hide $commentStart
 
              -- First, if the selection is changing to within the comment
              -- then cancel the event entirely
@@ -238,7 +239,7 @@
              end
              get the closest <p /> to $commentTargetContainer
              if the result is not null then
-               set conatiner to the result
+               set $commentTargetContainer to the result
              end
 
 
