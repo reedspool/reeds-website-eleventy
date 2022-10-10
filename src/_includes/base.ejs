@@ -196,15 +196,6 @@
         <main hx-boost="true">
             <article
                 _="
-                   init
-                     set $commentStart to <.comment-start />
-                     set $comment to <.comment />
-                     set $commentQuote to first <blockquote /> in $comment
-                     set $commentSelectionInput to #comment-selection in $comment
-                     set $commentContext to #comment-context in $comment
-                     set $commentTargetContainer to null
-                   end
-
            on selectionchange from document
              set selection to document.getSelection()
              hide $commentStart
@@ -213,6 +204,7 @@
              -- then cancel the event entirely
              set anchorElement to selection.anchorNode
              if anchorElement.nodeType is Node.TEXT_NODE then
+               -- Text nodes don't have .closest(), so get the parent element first
                set anchorElement to anchorElement.parentElement
              end
              get the closest <.comment /> to the anchorElement
@@ -267,14 +259,30 @@
             <% if (typeof discussionUrl !== "undefined") { %>
                 <div class="box">
                     <strong class="block titlebar">Discuss</strong>
+
+                    <p>Please use one of these three methods to discuss:</p>
                     <p>
-                        To give me feedback on this post, select some text.
-                        A "Comment" button will appear. Click that and fill
-                        out the form that appears. I really appreciate your
-                        feedback!
+                        1. Send me a <strong>private note</strong> by clicking this
+                        button and filling out the form below:
+                    </p>
+                    <p style="display: flex; justify-content: center; align-items: center;">
+                        <button
+                            _="on click
+                               put $comment after closest <.box />
+                               trigger showWithoutSelection on $comment
+                               ">
+                            Leave a Private Note
+                        </button>
                     </p>
                     <p>
-                        Discuss this post in
+                        2. Send me a
+                        <strong>private note about a selection.</strong>
+                        To do so, select some text from the article above and click the
+                        "Leave a Private Note" button that appears.
+                    </p>
+                    <p>
+                        3.
+                        <strong>Discuss this post</strong> in
                         <a href="<%- discussionUrl %>" target="_blank">
                             the official thread
                         </a>
@@ -306,31 +314,57 @@
             class="comment-start"
             style="display: none; padding-inline: var(--gap); padding-block: calc(var(--gap) / 4); border-radius: var(--gap);"
             _="
+                   init
+                     set $commentStart to me
+                   end
+
                    on click
                      put $comment after $commentTargetContainer
-                     show $comment
+                     trigger showWithSelection on $comment
                      hide me
                    "
-        >Comment</button>
+        >Leave a Private Note</button>
         <div class="comment box" style="display: none;"
              _="
-                    on resetResults
-                          hide the first <.box.ok /> in me
-                          hide the first <.box.bad /> in me
+                    init
+                       set $comment to me
+                       set $commentQuote to first <blockquote /> in me
+                       set $commentSelectionInput to #comment-selection in me
+                       set $commentContext to #comment-context in me
+                       set $commentTargetContainer to null
+                    end
 
-                    on reset
-                       trigger resetResults
-                       set #comment-content's value to ''
-                       hide me
+                    on showWithSelection
+                      -- For some reason this errors with 'Illegal invocation'
+                      -- I can set a variable to this and it works, but decided against it anyways
+                      -- call focus() of #comment-content
+                      show <[data-hs='showWithSelection'] />
+                      hide <[data-hs='showWithoutSelection'] />
+                      show me
+                      trigger resetResults on me
+                    end
+
+                    on showWithoutSelection
+                      hide <[data-hs='showWithSelection'] />
+                      show <[data-hs='showWithoutSelection'] />
+                      put 'No selection' into $commentSelectionInput
+                      show me
+                      trigger resetResults on me
+                    end
                     "
         >
             <strong
                 class="block titlebar"
                 style="display: flex; justify-content: space-between;"
             >
-                Private Comment
+                Private Note
                 <button class="close-button"
-                        _="on click hide closest <.comment />"
+                        _="on click
+                               tell closest <.comment />
+                                 hide yourself
+                                 trigger resetResults
+                               end
+                               "
                 >X</button>
             </strong>
             <form
@@ -342,25 +376,26 @@
                 class="table"
                 netlify-honeypot="bot-field"
                 _="
-                        on htmx:responseError
-                          hide the first <.box.ok /> in me
-                          show the first <.box.bad /> in me
-
-                        on htmx:afterSettle
-                          show the first <.box.ok /> in me
-                          hide the first <.box.bad /> in me
-
                         on htmx:beforeRequest
                           trigger resetResults on closest <.comment />
                         "
             >
-                <p>I want to hear from you! Your selection will be included:</p>
-
                 <p>
-                    <blockquote style="white-space: pre-wrap;">Your selection</blockquote>
+                    Send me a private note.
+                    <span data-hs="showWithSelection">
+                        Your selection will be included:
+                    </span>
+                    <span data-hs="showWithoutSelection">
+                        You can also select text within the article and hit the
+                        "Leave a Private Note" button which appears to include a
+                        selection with your comment.
+                    </span>
                 </p>
+                <blockquote data-hs="showWithSelection" style="white-space:pre-wrap;">
+                    Your selection
+                </blockquote>
                 <p style="display: none;">
-                    <label for="comment-selection">Your selection:</label>
+                    <label for="comment-selection">Selection:</label>
                     <textarea
                         name="selection"
                         id="comment-selection"
@@ -368,19 +403,62 @@
                     ></textarea>
                 </p>
                 <p>
-                    <label for="comment-content">Your comment:</label>
+                    <label for="comment-content">Note:</label>
                     <textarea
                         name="content"
                         id="comment-content"
                         style="width: 100%;"
+                        _="on resetCommentInput from closest <.comment />
+                             set my value to ''
+                        "
                     ></textarea>
                 </p>
+                <div class="box warn" style="display:none;"
+                     _="
+                            on resetResults from closest <.comment /> hide me
+                            on htmx:responseError from closest <form /> hide me
+                            on htmx:afterSettle from closest <form /> hide me
+                            "
+                >
+                    <p><strong>Write a note</strong> about your selection.</p>
+                    <p></p>
+                </div>
+                <p>
+                    Please share your name, email, or other identifier to let me know who you are.
+                    This will be saved to your browser and sent to me. I will never share it.
+                </p>
+                <p>
+                    <label for="comment-contact">Contact info (optional):</label>
+                    <input type="text" name="contact" value="" id="comment-contact"
+                           style="width: 100%;"
+                           _="
+                                init
+                                  set contact to localStorage.getItem('my-comment-contact')
+                                  if contact then set my value to contact end
+                                end
+                                on input
+                                 localStorage.setItem('my-comment-contact', my value)
+                                 "
+                    />
+                </p>
                 <p style="display: none;">
-                    <label for="comment-context">The context:</label>
+                    <label for="comment-context">Selection Context:</label>
                     <textarea
                         name="context"
                         id="comment-context"
                     ></textarea>
+                </p>
+                <p style="display: none;">
+                    <label for="comment-url">Page Title:</label>
+                    <input type="text" name="title" value=""
+                           _="init put document.title into my value"
+                    />
+                </p>
+                <p style="display: none;">
+                    <label for="comment-url">URL:</label>
+                    <input type="text" name="url" value=""
+                           _="init put document.location.toString() into my value"
+                    />
                 </p>
                 <p style="display: none;">
                     <label>
@@ -388,40 +466,57 @@
                     </label>
                 </p>
                 <p>
-                    <input type="submit" name="submit" value="Submit" id="comment-submit" />
+                    <input type="submit" value="Send" id="comment-submit" />
                     <button class="close-button"
                             _="
                                    on click
                                      send resetResults to closest <.comment />
                                      hide closest <.comment />
+                                     -- Prevent form submission
                                      halt"
                     >Cancel</button>
                 </p>
-                <div class="box ok" style="display: none;">
+                <div class="box ok" style="display: none;"
+                     _="
+                            on resetResults from closest <.comment /> hide me
+                            on htmx:responseError from closest <form /> hide me
+                            on htmx:afterSettle from closest <form /> show me
+                            "
+                >
                     <p>
-                        <strong>Submitted, thank you!</strong>
+                        <strong>Received. Thank you!</strong>
                         <button
                             style="margin-inline-start: var(--gap);"
                             _="
                                on click
-                                 send reset to closest <.comment />
-                                 halt
+                                 -- TODO what happens if this halt isn't here?
+                                 halt the event
+                                 tell closest <.comment />
+                                   trigger resetResults
+                                   trigger resetCommentInput
+                                   hide me
+                                 end
                                "
-                        >Clear and close comment box</button>
+                        >Clear and close note box</button>
                     </p>
                 </div>
-                <div class="box bad" style="display:none;">
+                <div class="box bad" style="display:none;"
+                     _="
+                            on resetResults from closest <.comment /> hide me
+                            on htmx:responseError from closest <form /> show me
+                            on htmx:afterSettle from closest <form /> hide me
+                            "
+                >
                     <p><strong>Something went wrong :-/</strong></p>
                     <p>
                         I'm sorry, I don't know what happened.
-                        Please email me your comment at
-                        <a href="mailto:reedwith2es@gmail.com">reed2with2es@gmail.com</a>
-                        instead, as I really want to read your comment.
+                        Please email me your note at
+                        <a href="mailto:reedwith2es@gmail.com">reedwith2es@gmail.com</a>
+                        instead, as I really want to read your note.
                         Don't waste your time resubmitting as I can't guarantee
                         this won't happen again.
                     </p>
                 </div>
-                <p><em>P.S. Only I will see this comment once it is sent! It's anonymous by default, so include your name or email if you'd like a discussion or reply.</em></p>
             </form>
         </div>
     </body>
