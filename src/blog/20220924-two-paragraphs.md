@@ -9,7 +9,7 @@ My morning began smoothly with a coffee and a banana. The daily status meeting z
 
 Then, a half hour ago, I ran into a problem. I was unsure of my next step. I stared blankly at my screen until my screen went blank. I'm stuck.
 
-Feeling stuck triggers some bad habits. I might scroll through Slack or Reddit. Worst of all, I might delve into my snack drawer.
+Feeling stuck usually triggers some bad habits. I might scroll through Slack or Reddit. Worst of all, I might delve into my snack drawer.
 
 But recently I found a healthier plan. When I am stuck, I write my two paragraphs.
 
@@ -54,7 +54,7 @@ One paragraph down, one to go. How did I get stuck?
 
 Did I write enough? Did I overexplain? How big are these paragraphs supposed to be? I doubted not only the article's advice but my ability to write anything at all.
 
-I looked at my two paragraphs with half doubt and half pride. I accomplished something, but I did not know what to expect next. I went to lunch.
+I looked at my two paragraphs with half doubt and half pride. I had accomplished something, but I did not know what to expect next. I went to lunch.
 
 When I returned from lunch, my two paragraphs were waiting for me. They looked unfamiliar. I did not remember what I wrote.
 
