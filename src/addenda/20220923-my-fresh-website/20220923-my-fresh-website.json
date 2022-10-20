@@ -1,0 +1,8 @@
+{
+    "layout": null,
+    "tags": [
+        "addenda-20220923-my-fresh-website"
+    ],
+    "addenda": true,
+    "templateEngineOverride": "ejs,md"
+}

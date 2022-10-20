@@ -21,13 +21,12 @@ The shiny, newfangled gadgets and gizmos could wait until I solved these core ne
 
 I wanted to write my articles in <a href="https://www.markdownguide.org/" target="_blank">Markdown</a> because it's a simple format with longevity and wide support.
 
-I knew I wanted to use a static site generator to serve my simple articles. I chose <a href="https://github.com/11ty/eleventy" target="_blank">Eleventy</a> to generate my site because it promised simple setup and support for many templating languages. 
+I knew I wanted to use a static site generator to serve my simple articles. I chose <a href="https://github.com/11ty/eleventy" target="_blank">Eleventy</a> to generate my site because it promised simple setup and support for many templating languages.
 
 For the templating language, I chose <a href="https://ejs.co/" target="_blank">EJS</a>. EJS allows me to use JavaScript where other templating languages contain their own unique domain-specific language.
 
-To style my site, I wanted simplicity. <a href="https://missing.style/" target="_blank">missing.css</a> recently released its `v1.0.0`, so I decided to try it out. The library promises decent default styling without littering my HTML with classes.
+To style my site, I wanted simplicity. <a href="https://missing.style/" target="_blank">missing.css</a> recently released its `v0.1.0`, so I decided to try it out. The library promises decent default styling without littering my HTML with classes.
 
 In past projects I used <a href="https://htmx.org" target="_blank">htmx</a> for web-based interactivity like form submission. In this project, I brought it in only to "boost" my links. This makes page transitions feel snappier because the entire page need not reload. Most of the pages on my site would have similar layout and resources so this made sense.
 
 If I wanted to add page-local or more complicated interactivity in the future, I would choose <a href="https://hyperscript.org" target="_blank">hyperscript</a> to complete the full trinity of <a href="https://bigsky.software" target="_blank">Big Sky Software</a> tools.
-
