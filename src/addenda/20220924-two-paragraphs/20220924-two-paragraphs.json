@@ -1,0 +1,8 @@
+{
+    "layout": null,
+    "tags": [
+        "addenda-20220924-two-paragraphs"
+    ],
+    "addenda": true,
+    "templateEngineOverride": "ejs,md"
+}

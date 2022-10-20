@@ -290,6 +290,29 @@
                     </p>
                 </div>
             <% } %>
+
+            <% if (typeof tags !== "undefined" && tags.includes("posts")) { %>
+                <h3>Addenda</h3>
+                <% const addenda = collections["addenda-" + page.fileSlug]; %>
+
+                <% if (typeof addenda !== "undefined") { %>
+                    <ul style="list-style: none;">
+                        <% for ({ date, templateContent } of addenda) { %>
+                            <li class="box plain">
+                                <time class="titlebar ok" datetime="<%- date %>">
+                                    <%- new Date(date).toLocaleDateString() %>
+                                </time>
+                                <%- templateContent %>
+                            </li>
+                        <% } %>
+                    </ul>
+                <% } else { %>
+                    <p>
+                        No addenda for this post yet.
+                        Send me a private note if you think you have a valid addition!.
+                    </p>
+                <% } %>
+            <% } %>
         </main>
         <footer class="navbar">
             <nav class="f-row margin-inline">
