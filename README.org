@@ -1,6 +1,6 @@
-#+title: Reed's Website
+#+title: Reed's Website (DEFUNCT Eleventy version)
 
-Live at https://reeds.website
+NOTE: THIS IS DEFUNCT. NOW AT https://github.com/reedspool/reeds-website
 
 * Technology
 
